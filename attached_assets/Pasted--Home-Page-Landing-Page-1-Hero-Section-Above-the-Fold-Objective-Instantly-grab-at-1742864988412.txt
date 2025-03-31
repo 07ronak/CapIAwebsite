@@ -1,0 +1,473 @@
+# Home Page/Landing Page
+
+### **1. Hero Section (Above the Fold)**
+
+**Objective**: Instantly grab attention and communicate the core value proposition.
+
+- **Tagline**:
+    
+    *"Smarter Finances for Startups—Unify, Predict, Grow."*
+    
+- **Subtext**:
+    
+    *"*CapIA.ai unifies your financial data, delivers AI-powered insights, and gives you the clarity to scale your startup with confidence.*."*
+    
+- **Call-to-Action (CTA)**:
+    - Primary CTA: *"Get Started for Free"* (button in **CapIA Blue #6CABDD**).
+    - Secondary CTA: *"See Capia.ai in Action"* (button in **Orange #F3AC75**).
+- **Visuals**:
+    - A dynamic animation or video showcasing the Capia.ai dashboard in action (e.g., cash flow tracking, predictive analytics, AR/AP automation).
+    - Alternatively, use a clean, high-quality image of the dashboard with key metrics highlighted.
+- **Trust-Building Element**:
+    - Add a small badge or text below the CTAs: *"SOC 2 Compliant | Trusted by Early-Stage Startups."*
+
+---
+
+### **2. Key Features Section**
+
+**Objective**: Highlight the most important features and outcomes Capia.ai delivers.
+
+**Header**:
+
+*"Empowering Startups to Scale Smarter and Faster."*
+
+**Content**:
+
+Use a **vertical accordion format** to improve readability and focus on pain points and solutions.
+
+1. **Predict the Future, Act with Confidence**
+    - *"Leverage AI-powered forecasts to anticipate challenges and seize opportunities."*
+    - Pain Point: *"Uncertainty in decision-making without predictive insights."*
+    - Visual: A scenario planning tool showing the impact of hiring delays or fundraising on cash flow.
+2. **Smarter Cash Flow Management**
+    - *"Gain real-time visibility into your cash flow and runway to make informed decisions."*
+    - Pain Point: *"Poor cash flow visibility risks financial instability."*
+    - Visual: A cash flow projection chart showing runway extensions based on actionable recommendations.
+3. **Retain More Customers, Build Long-Term Relationships**
+    - *"Spot early warning signs of churn and take proactive steps to retain your most valuable customers."*
+    - Pain Point: *"Poor customer insights drive churn and missed upsell opportunities."*
+    - Visual: A graph showing customer health scores with recommendations for retention actions.
+4. **Focus on the Deals That Drive Growth**
+    - *"Prioritize high-value opportunities with deal pipeline health insights."*
+    - Pain Point: *"Fragmented data delays decisions and stifles growth."*
+    - Visual: A pipeline health dashboard showing deal confidence levels.
+5. **Unified Financial Insights**
+    - *"Bring all your financial data into one platform for a complete picture of your business."*
+    - Pain Point: *"Scattered financial data across multiple tools."*
+    - Visual: A unified dashboard showing data from multiple integrations.
+
+**Design Notes**:
+
+- Use **icons or small visuals** for each feature.
+- Add **hover effects** to expand each accordion item for more details.
+
+---
+
+### **3. "What You Can Achieve in 30 Days" Section**
+
+**Objective**: Show the immediate and progressive value Capia.ai delivers within the first 30 days.
+
+**Header**:
+
+*"Here’s How Capia.ai Transforms Your Startup’s Finances in Just 30 Days."*
+
+**Content**:
+
+Use a **3-step timeline** to highlight milestones and outcomes.
+
+- **Day 1: Get Started with Ease**
+    - *"Seamlessly integrate your financial tools (QuickBooks, Stripe, HubSpot) and get a unified view of your finances in minutes."*
+    - Visual: A simple illustration of integrations being connected to Capia.ai.
+- **Day 7: Gain Real-Time Insights**
+    - *"Track cash flow, burn rate, and runway in real-time. Identify overdue invoices and at-risk customers with actionable alerts."*
+    - Visual: A dashboard screenshot showing key metrics like cash flow, runway, and customer health scores.
+- **Day 30: Make Smarter Decisions with Predictive Analytics**
+    - *"Use AI-powered forecasts to plan for growth, optimize spending, and extend your runway."*
+    - Visual: A graph showing predictive analytics for revenue growth and cash flow projections.
+
+**Design Notes**:
+
+- Use a **horizontal timeline** with clear milestones (Day 1, Day 7, Day 30).
+- Highlight each milestone with a **bold header**, a short description, and a supporting visual.
+- Add a **CTA at the end of the timeline**, such as *"Start Your Free Trial Today."*
+
+---
+
+### **4. With/Without Capia.ai Section**
+
+**Objective**: Highlight the contrast between the challenges startups face without Capia.ai and the solutions it provides.
+
+**Header**:
+
+*"The Capia.ai Advantage: Transforming Challenges into Opportunities."*
+
+**Content**:
+
+Use a **split-screen layout** with two columns.
+
+- **Left Column (Without Capia.ai)**:
+    - **Missed Opportunities**: *"Fragmented data delays decisions and stifles growth."*
+    - **Costly Errors**: *"Manual processes and poor cash flow visibility risk financial instability."*
+    - **Time Drain**: *"Reconciliation tasks steal focus from scaling your business."*
+    - **Lost Revenue**: *"Poor customer insights drive churn and missed upsell opportunities."*
+    - **Investor Concerns**: *"Weak financial tools deter funding and reduce investor confidence."*
+- **Right Column (With Capia.ai)**:
+    - **Seize Opportunities**: *"Unified financial data and real-time insights empower faster, smarter decisions to fuel growth."*
+    - **Ensure Accuracy**: *"Automated workflows and cash flow tracking reduce errors and improve financial stability."*
+    - **Save Time**: *"Streamline reconciliation and reporting, freeing up time to focus on scaling."*
+    - **Boost Revenue**: *"AI-powered customer insights help you retain customers and unlock new revenue streams."*
+    - **Build Confidence**: *"Investor-ready reports and predictive analytics strengthen your funding pitch and financial credibility."*
+
+**Design Notes**:
+
+- **Split-Screen Design**:
+    - Left column in **Dark Gray (#202B31)** to represent challenges.
+    - Right column in **CapIA Blue (#6CABDD)** to represent solutions.
+    - Use a vertical dividing line in **Orange (#F3AC75)** for contrast.
+- Add **icons or small visuals** for each point to make the section visually engaging.
+
+---
+
+### **5. Call-to-Action Section**
+
+**Objective**: Reinforce the value proposition and encourage visitors to take action.
+
+**Header**:
+
+*"Ready to Transform Your Startup’s Finances?"*
+
+**CTA Buttons**:
+
+- Primary CTA: *"Start Your Free Trial Today"* (button in **CapIA Blue (#6CABDD)**).
+- Secondary CTA: *"Schedule a Demo in 15 Minutes"* (button in **Red (#F1425A)**).
+
+**Visuals**:
+
+- Use a clean background with a subtle gradient in **CapIA Blue (#6CABDD)** and **Light Gray (#F9F9F9)**.
+- Include a small image of the Capia.ai dashboard or a success metric (e.g., *"Save 10+ hours/month on financial management."*).
+
+---
+
+### **6. Footer**
+
+**Objective**: Provide navigation links and contact information.
+
+**Content**:
+
+- Links: About, Features, Pricing, Blog, Contact Us.
+- Social Media Icons: LinkedIn, Twitter, etc.
+- Support: *"Need help? Chat with us!"* (link to live chat or chatbot).
+- Newsletter Signup: *"Stay updated with the latest financial insights for startups."*
+- Copyright Notice: *"© 2025 Capia.ai. All rights reserved."*
+
+**Visuals**:
+
+- Use a clean, minimalistic design with text in **Dark Gray (#202B31)** and links in **CapIA Blue (#6CABDD)**.
+- Add a **small badge or logo strip** for recognitions or partnerships (e.g., *“Featured in [Publication Name]”* or *“Backed by [Accelerator Name]”*).
+
+### **1. Color Palette (Dark Mode)**
+
+Adjust the color palette to suit a black background while ensuring sufficient contrast for readability.
+
+- **Primary Colors**:
+    - **Black (#000000)**: For the main background.
+    - **White (#FFFFFF)**: For text, icons, and key highlights.
+- **Accent Colors**:
+    - **CapIA Blue (#6CABDD)**: For primary CTAs, links, and key highlights.
+    - **Orange (#F3AC75)**: For secondary accents, dividing lines, and interactive elements.
+    - **Red (#F1425A)**: For alerts or warnings.
+- **Shades of Gray**:
+    - **Dark Gray (#202B31)**: For subtle section dividers or background overlays.
+    - **Light Gray (#F9F9F9)**: For hover effects or secondary text.
+
+### **2. Typography (Dark Mode Adjustments)**
+
+Ensure the text is highly readable against the black background.
+
+- **Font Family**: Stick with clean, sans-serif fonts like **Inter**, **Roboto**, or **Open Sans**.
+- **Font Colors**:
+    - Use **White (#FFFFFF)** for all primary text.
+    - Use **Light Gray (#D3D3D3)** for secondary text or descriptions.
+- Subtext: 20px, regular.
+- Section Headers: 32px, bold.
+- Body Text: 16px, regular.
+- CTA Buttons: 18px, bold.
+- **Font Sizes**:
+    - Hero Section Tagline: 48px, bold.
+- **Line Spacing**: Maintain a line height of 1.5x for readability.
+
+---
+
+### **3. Visual Elements (Dark Mode)**
+
+Adapt visuals and icons to stand out against the black background.
+
+- **Icons**:
+    - Use **white icons** with subtle accents in **CapIA Blue (#6CABDD)** or **Orange (#F3AC75)**.
+    - Ensure icons are minimalistic and consistent in style.
+- **Images**:
+    - Use **dashboard screenshots** or illustrations with a dark mode version (e.g., white text and light-colored graphs).
+    - Add a subtle glow or shadow around images to make them pop against the black background.
+- **Dividers**:
+    - Use **thin lines in Dark Gray (#202B31)** or **Orange (#F3AC75)** to separate sections.
+- **Hover Effects**:
+    - For buttons and links, use a **slight glow effect** or a **color change** (e.g., CapIA Blue to a lighter blue shade).
+
+---
+
+### **4. Layout and Spacing**
+
+Maintain the same layout structure but adjust spacing for a dark background.
+
+- **Grid System**: Use a **12-column grid** for responsive design.
+- **Section Padding**:
+    - Top and Bottom Padding: 80px for major sections.
+    - Inner Padding: 40px for content within sections.
+- **Element Spacing**:
+    - Between Headings and Subtext: 20px.
+    - Between Features or Cards: 30px.
+- **Alignment**:
+    - Center-align content in the Hero Section and Call-to-Action areas.
+    - Left-align text in feature descriptions and the "With/Without Capia.ai" section.
+
+---
+
+### **5. Hero Section (Dark Mode)**
+
+**Tagline**:
+
+*"Smarter Finances for Startups—Unify, Predict, Grow."*
+
+- Use **White (#FFFFFF)** for the tagline and subtext.
+
+**Subtext**:
+
+*"Capia.ai unifies your financial data, delivers AI-powered insights, and gives you the clarity to scale your startup with confidence."*
+
+- Use **Light Gray (#D3D3D3)** for the subtext to create a subtle contrast.
+
+**CTAs**:
+
+- Primary CTA: *"Get Started for Free"* (button in **CapIA Blue (#6CABDD)** with white text).
+- Secondary CTA: *"See Capia.ai in Action"* (button in **Orange (#F3AC75)** with white text).
+
+**Visuals**:
+
+- Use a **dark-themed dashboard screenshot** or animation with white text and light-colored graphs.
+
+---
+
+### **6. Key Features Section (Dark Mode)**
+
+Switch to a **vertical accordion format** for better readability on a dark background.
+
+**Header**:
+
+*"Empowering Startups to Scale Smarter and Faster."*
+
+- Use **White (#FFFFFF)** for the header.
+
+**Accordion Items**:
+
+- Each accordion item should have a **white title** and **light gray description**.
+- Use **CapIA Blue (#6CABDD)** for hover effects or expanded states.
+
+**Icons and Visuals**:
+
+- Use **white icons** with subtle accents in **CapIA Blue (#6CABDD)** or **Orange (#F3AC75)**.
+- Ensure visuals (e.g., graphs, dashboards) are optimized for dark mode.
+
+---
+
+### **7. "What You Can Achieve in 30 Days" Section (Dark Mode)**
+
+**Header**:
+
+*"Here’s How Capia.ai Transforms Your Startup’s Finances in Just 30 Days."*
+
+- Use **White (#FFFFFF)** for the header.
+
+**Timeline**:
+
+- Use a **horizontal timeline** with milestones in **CapIA Blue (#6CABDD)**.
+- Add a subtle glow effect to each milestone to make it stand out.
+
+**Milestone Descriptions**:
+
+- Use **White (#FFFFFF)** for titles and **Light Gray (#D3D3D3)** for descriptions.
+
+**CTA at the End**:
+
+- Primary CTA: *"Start Your Free Trial Today"* (button in **CapIA Blue (#6CABDD)** with white text).
+
+---
+
+### **8. With/Without Capia.ai Section (Dark Mode)**
+
+**Header**:
+
+*"The Capia.ai Advantage: Transforming Challenges into Opportunities."*
+
+- Use **White (#FFFFFF)** for the header.
+
+**Split-Screen Design**:
+
+- **Left Column (Without Capia.ai)**:
+    - Background: **Dark Gray (#202B31)**.
+    - Text: **Light Gray (#D3D3D3)**.
+    - Icons: **White icons** with red accents for challenges.
+- **Right Column (With Capia.ai)**:
+    - Background: **CapIA Blue (#6CABDD)**.
+    - Text: **White (#FFFFFF)**.
+    - Icons: **White icons** with orange or light blue accents for solutions.
+
+**Dividing Line**:
+
+- Use a **vertical line in Orange (#F3AC75)** to separate the columns.
+
+---
+
+### **9. Call-to-Action Section (Dark Mode)**
+
+**Header**:
+
+*"Ready to Transform Your Startup’s Finances?"*
+
+- Use **White (#FFFFFF)** for the header.
+
+**CTAs**:
+
+- Primary CTA: *"Start Your Free Trial Today"* (button in **CapIA Blue (#6CABDD)** with white text).
+- Secondary CTA: *"Schedule a Demo in 15 Minutes"* (button in **Orange (#F3AC75)** with white text).
+
+**Background**:
+
+- Use a **gradient background** transitioning from **Black (#000000)** to **Dark Gray (#202B31)**.
+
+---
+
+### **10. Footer (Dark Mode)**
+
+**Content**:
+
+- Links: Use **White (#FFFFFF)** for text and **CapIA Blue (#6CABDD)** for hover effects.
+- Social Media Icons: Use **White icons** with subtle hover effects.
+- Newsletter Signup: Use a **white input field** with a **CapIA Blue button**.
+- Copyright Notice: Use **Light Gray (#D3D3D3)** for the text.
+
+**Background**:
+
+- Use **Black (#000000)** for the footer background.
+
+---
+
+### **Additional Notes for Developers**
+
+1. **Dark Mode Optimization**:
+    - Ensure all visuals (e.g., graphs, dashboards) are optimized for a black background.
+    - Test all text and icon colors for sufficient contrast.
+2. **Hover Effects**:
+    - Use subtle glow or color changes for buttons, links, and icons to enhance interactivity.
+3. **Performance**:
+    - Optimize animations and visuals to ensure fast load times, even with dark mode elements.
+4. **Testing**:
+    - Test the design on both light and dark mode devices to ensure consistency and readability.
+
+### **2. Typography**
+
+Specify the fonts, sizes, and weights for different text elements.
+
+- **Font Family**: Use a clean, sans-serif font like **Inter**, **Roboto**, or **Open Sans**.
+- **Font Sizes**:
+    - Hero Section Tagline: 48px, bold.
+    - Subtext: 20px, regular.
+    - Section Headers: 32px, bold.
+    - Body Text: 16px, regular.
+    - CTA Buttons: 18px, bold.
+- **Font Weights**:
+    - Use **bold** for headers and CTAs.
+    - Use **regular** for body text and descriptions.
+- **Line Spacing**: Ensure sufficient line height (e.g., 1.5x) for readability.
+
+---
+
+### **3. Layout and Spacing**
+
+Provide clear instructions on spacing and alignment to ensure a clean and balanced design.
+
+- **Grid System**: Use a **12-column grid** for responsive design.
+- **Section Padding**:
+    - Top and Bottom Padding: 80px for major sections.
+    - Inner Padding: 40px for content within sections.
+- **Element Spacing**:
+    - Between Headings and Subtext: 20px.
+    - Between Features or Cards: 30px.
+- **Alignment**:
+    - Center-align content in the Hero Section and Call-to-Action areas.
+    - Left-align text in feature descriptions and "With/Without Capia.ai" sections.
+
+---
+
+### **4. Visual Elements**
+
+Provide guidance on the use of visuals, icons, and animations.
+
+- **Icons**:
+    - Use modern, minimalistic icons for features and pain points.
+    - Ensure icons are consistent in style (e.g., line-based or filled).
+    - Icon Size: 40px x 40px.
+- **Images**:
+    - Use high-quality dashboard screenshots or illustrations to showcase features.
+    - Ensure images are optimized for web (compressed without losing quality).
+- **Animations**:
+    - Subtle hover effects on buttons and links (e.g., color change or slight scaling).
+    - Smooth transitions for accordion items and timeline milestones.
+    - Avoid heavy animations that could slow down the page.
+
+---
+
+### **5. Interactivity**
+
+Explain how interactive elements should behave to enhance user experience.
+
+- **Hero Section**:
+    - CTA buttons should have hover effects (e.g., background color darkens slightly).
+    - Animation or video in the Hero Section should autoplay but remain lightweight.
+- **Accordion in Features Section**:
+    - Accordion items should expand smoothly when clicked.
+    - Only one accordion item should be open at a time to avoid clutter.
+- **Timeline Section**:
+    - Milestones should have hover effects (e.g., slight zoom or highlight).
+    - Include navigation dots or arrows for mobile users to scroll through milestones.
+- **With/Without Capia.ai Section**:
+    - Add hover effects to icons or visuals to make the section more engaging.
+    - Ensure the dividing line between columns is responsive and visually distinct.
+
+---
+
+### **6. Responsive Design**
+
+Provide notes on how the website should adapt to different screen sizes.
+
+- **Desktop**:
+    - Use the full width of the screen with a maximum container width of 1200px.
+    - Maintain a 12-column grid for layout consistency.
+- **Tablet**:
+    - Reduce the grid to 8 columns.
+    - Stack elements vertically where necessary (e.g., in the Features Section).
+- **Mobile**:
+    - Use a single-column layout for all sections.
+    - Ensure CTA buttons are large enough for easy tapping (minimum 44px height).
+    - Replace hover effects with tap interactions.
+
+---
+
+### **7. Content Hierarchy**
+
+Explain the importance of content hierarchy to guide user attention.
+
+- **Hero Section**: The tagline and primary CTA should be the first elements users see.
+- **Features Section**: Start with the most impactful feature ("Predict the Future, Act with Confidence").
+- **Timeline Section**: Use a clear progression (Day 1 → Day 7 → Day 30) to show increasing value.
+- **With/Without Capia.ai Section**: Ensure the "With Capia.ai" column is visually dominant to emphasize benefits.
+- **Call-to-Action Section**: Repeat the primary CTA to reinforce the next step.
