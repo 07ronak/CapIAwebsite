@@ -1,0 +1,5 @@
+{
+  "builds": [{ "src": "client/index.html", "use": "@vercel/static" }],
+  "ignoreCommand": "echo 'Skipping backend'",
+  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+}
