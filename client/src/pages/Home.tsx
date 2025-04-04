@@ -6,22 +6,23 @@ import Timeline from "@/components/Timeline";
 import Comparison from "@/components/Comparison";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
+import NewCta from "@/components/NewCta";
 
 export default function Home() {
   useEffect(() => {
     // Set up smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
         e.preventDefault();
-        
-        const targetId = (this as HTMLAnchorElement).getAttribute('href');
-        if (targetId === '#') return;
-        
+
+        const targetId = (this as HTMLAnchorElement).getAttribute("href");
+        if (targetId === "#") return;
+
         const targetElement = document.querySelector(targetId!);
         if (targetElement) {
           window.scrollTo({
             top: (targetElement as HTMLElement).offsetTop - 80, // Adjust for fixed header
-            behavior: 'smooth'
+            behavior: "smooth",
           });
         }
       });
@@ -29,8 +30,8 @@ export default function Home() {
 
     // Cleanup
     return () => {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', () => {});
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.removeEventListener("click", () => {});
       });
     };
   }, []);
@@ -43,7 +44,8 @@ export default function Home() {
         <KeyFeatures />
         <Timeline />
         <Comparison />
-        <CtaSection />
+        {/* <CtaSection /> */}
+        <NewCta />
       </main>
       <Footer />
     </div>

@@ -64,19 +64,19 @@ export default function Navbar() {
             >
               Results
             </a>
-            <a
-              href="#comparison"
-              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
-            >
-              Why CapIA
-            </a>
             <Link
-              href="/pricing"
+              href="/360"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
-              Pricing
+              Revenue 360
             </Link>
-            <Button
+            <Link
+              href="/about"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
+            >
+              About us
+            </Link>
+            <Link
               className="bg-[#00b3e6] hover:bg-[#00b3e6]/90 
   text-[#F5F5F5] hover:text-black font-arial
   transition-all duration-300 ease-in-out
@@ -85,9 +85,10 @@ export default function Navbar() {
   border border-transparent hover:border-[#00b3e6]/30
   focus:ring-4 focus:ring-[#00b3e6]/30
   active:transform active:scale-95"
+              href="/pricing"
             >
               Get Started
-            </Button>
+            </Link>
           </div>
           <div className="flex md:hidden items-center">
             <Button

@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import { fadeIn, slideUp } from "@/lib/animations";
 import { useRef } from "react";
 
@@ -137,9 +138,12 @@ export default function Timeline() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <Button className="bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white px-8 py-2.5 text-base">
+            <Link
+              className="bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white px-8 py-2.5 text-base"
+              href="/pricing"
+            >
               Start Your Free Trial Today
-            </Button>
+            </Link>
           </motion.div>
         </div>
       </div>

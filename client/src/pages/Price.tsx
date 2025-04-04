@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CtaSection from "@/components/CtaSection";
 import Pricing from "@/components/Pricing";
+import NewCta from "@/components/NewCta";
 
 export default function Price() {
   useEffect(() => {
@@ -35,9 +36,10 @@ export default function Price() {
   return (
     <div className="min-h-screen bg-black text-white antialiased">
       <Navbar />
-      <main >
+      <main>
         <Pricing />
-        <CtaSection />
+        {/* <CtaSection /> */}
+        <NewCta />
       </main>
       <Footer />
     </div>
