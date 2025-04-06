@@ -27,6 +27,15 @@ export default function NewCta() {
                   CapIA<span className="text-[#FF955C]">.ai</span>
                 </span>
               </div>
+
+              <div className="hidden md:flex md:items-center md:justify-center relative w-12 h-12 -mt-6 -ml-12">
+                <div className="arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+
               <div className="flex flex-col space-y-4">
                 <motion.div {...popAnimation}>
                   <Button className="w-full px-8 py-7 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-lg">
