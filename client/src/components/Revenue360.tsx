@@ -193,7 +193,11 @@ export default function Revenue360() {
                 {/* Header/Title section */}
                 <button
                   className="w-full px-6 py-5 flex items-center justify-between text-left"
-                  onClick={() => setActiveFeature(feature.id)}
+                  onClick={() =>
+                    setActiveFeature(
+                      activeFeature === feature.id ? 0 : feature.id
+                    )
+                  }
                 >
                   <div className="flex items-center gap-4">
                     <span className="text-[#00b3e6] text-2xl">
@@ -235,15 +239,13 @@ export default function Revenue360() {
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3 }}
                         className="border border-[#00b3e6]/50 rounded-lg bg-[#00b3e6]/10 overflow-hidden p-2"
+                        style={{ height: "220px" }} // Fixed height container
                       >
                         <img
                           src={feature.image}
                           alt={feature.title}
-                          className="w-full h-auto rounded-lg"
-                          style={{
-                            maxHeight: "400px",
-                            objectFit: "cover",
-                          }}
+                          className="w-full h-full rounded-lg object-cover"
+                          loading="eager" // Eagerly load images
                         />
                       </motion.div>
                     </motion.div>
