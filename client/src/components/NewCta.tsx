@@ -28,7 +28,7 @@ export default function NewCta() {
                 </span>
               </div>
 
-              <div className="hidden md:flex md:items-center md:justify-center relative w-12 h-12 -mt-6 -ml-12">
+              <div className="hidden md:flex md:items-center md:justify-center relative w-12 h-12 lg:-mt-6 lg:-ml-12 md:-mt-3">
                 <div className="arrow">
                   <span></span>
                   <span></span>
