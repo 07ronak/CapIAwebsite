@@ -45,12 +45,6 @@ export default function Hero() {
                 </Button>
               </motion.div>
             </motion.div>
-            <motion.div className="mt-6" {...fadeIn(0.8)}>
-              <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-800 text-gray-300">
-                <Shield className="h-5 w-5 mr-2 text-green-500" />
-                SOC 2 Compliant | Trusted by Early-Stage Startups
-              </div>
-            </motion.div>
           </motion.div>
           <motion.div className="md:w-1/2" {...slideInRight(0.3)}>
             <div className="relative rounded-lg overflow-hidden shadow-2xl border border-gray-800">

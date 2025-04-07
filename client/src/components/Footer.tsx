@@ -322,14 +322,6 @@ export default function Footer() {
                 </Button>
               </div>
             </form>
-            <div className="flex items-center">
-              <div className="bg-gray-800 rounded-md px-3 py-1 text-xs font-medium text-gray-300 mr-2">
-                SOC 2
-              </div>
-              <div className="bg-gray-800 rounded-md px-3 py-1 text-xs font-medium text-gray-300">
-                Featured in TechCrunch
-              </div>
-            </div>
           </motion.div>
         </div>
 
