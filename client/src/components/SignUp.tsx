@@ -65,7 +65,10 @@ export default function SignUp() {
   };
 
   return (
-    <section className="pt-32 bg-black pb-20" id="signup">
+    <section
+      className="pt-32 pb-20 bg-gradient-to-b from-[#00b3e6]/25 via-[#00b3e6]/15 via-[#00b3e6]/8 to-black"
+      id="signup"
+    >
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"

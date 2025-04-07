@@ -8,6 +8,7 @@ import {
   MdAnalytics,
   MdExpandMore,
 } from "react-icons/md";
+import { Link } from "wouter";
 
 // Images
 const revenueInsightsImg = "/revenue-insights.webp";
@@ -271,12 +272,12 @@ export default function Revenue360() {
             Join our alpha program to get early access to Revenue360 and start
             making smarter, data-driven decisions for your business.
           </p>
-          <a
-            href="#contact"
+          <Link
+            href="/alpha"
             className="inline-block bg-[#00b3e6] text-white py-3 px-8 rounded-full text-lg font-medium hover:bg-[#00b3e6]/90 transition-colors"
           >
-            Sign Up for Alpha Access
-          </a>
+            Get Started
+          </Link>
         </motion.div>
       </div>
     </section>

@@ -111,40 +111,37 @@ export default function Navbar() {
           transition={{ duration: 0.2 }}
         >
           <div className="p-4 space-y-6">
-            <a
-              href="#features"
-              className={`block py-2 text-xl text-white hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-              onClick={toggleMenu}
+            <Link
+              href="/360"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
-              Features
-            </a>
-            <a
-              href="#timeline"
-              className={`block py-2 text-xl text-white hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-              onClick={toggleMenu}
+              Revenue 360
+            </Link>
+            <Link
+              href="/about"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
-              Results
-            </a>
-            <a
-              href="#comparison"
-              className={`block py-2 text-xl text-white hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-              onClick={toggleMenu}
-            >
-              Why CapIA
-            </a>
-            <a
-              href="#"
-              className={`block py-2 text-xl text-white hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-              onClick={toggleMenu}
+              About us
+            </Link>
+            <Link
+              href="/pricing"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
               Pricing
-            </a>
-            <Button
-              className="w-full bg-[#00b3e6] hover:bg-[#00b3e6]/80 text-white mt-4"
-              onClick={toggleMenu}
+            </Link>
+            <Link
+              className="bg-[#00b3e6] hover:bg-[#00b3e6]/90
+  text-[#F5F5F5] hover:text-black font-arial
+  transition-all duration-300 ease-in-out
+  font-medium rounded-md px-6 py-3
+  shadow-md hover:shadow-xl
+  border border-transparent hover:border-[#00b3e6]/30
+  focus:ring-4 focus:ring-[#00b3e6]/30
+  active:transform active:scale-95"
+              href="/alpha"
             >
               Get Started
-            </Button>
+            </Link>
           </div>
         </motion.div>
       )}
