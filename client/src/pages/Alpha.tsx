@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-/* import SignUp from "@/components/SignUp"; */
+import SignUp from "@/components/SignUp";
 
 export default function AboutUs() {
   useEffect(() => {
