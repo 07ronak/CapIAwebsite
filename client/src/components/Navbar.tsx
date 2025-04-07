@@ -45,25 +45,13 @@ export default function Navbar() {
               <a className="flex-shrink-0 flex items-center cursor-pointer">
                 <img src="/logo.png" alt="Logo" className="h-9 w-10 mr-2" />{" "}
                 {/* Added image with some styling */}
-                <span className="text-[#00b3e6] text-2xl font-bold ">
-                  CapIA<span className="text-[#FF955C]">.ai</span>
+                <span className="text-2xl font-bold ">
+                  Cap<span className="text-[#00b3e6]">IA</span>.ai
                 </span>
               </a>
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            <a
-              href="#features"
-              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
-            >
-              Features
-            </a>
-            <a
-              href="#timeline"
-              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
-            >
-              Results
-            </a>
             <Link
               href="/360"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
@@ -77,7 +65,13 @@ export default function Navbar() {
               About us
             </Link>
             <Link
-              className="bg-[#00b3e6] hover:bg-[#00b3e6]/90 
+              href="/pricing"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
+            >
+              Pricing
+            </Link>
+            <Link
+              className="bg-[#00b3e6] hover:bg-[#00b3e6]/90
   text-[#F5F5F5] hover:text-black font-arial
   transition-all duration-300 ease-in-out
   font-medium rounded-md px-6 py-3
@@ -85,7 +79,7 @@ export default function Navbar() {
   border border-transparent hover:border-[#00b3e6]/30
   focus:ring-4 focus:ring-[#00b3e6]/30
   active:transform active:scale-95"
-              href="/pricing"
+              href="/alpha"
             >
               Get Started
             </Link>

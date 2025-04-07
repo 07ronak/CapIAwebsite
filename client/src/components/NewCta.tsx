@@ -23,8 +23,8 @@ export default function NewCta() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-8 md:mb-0 md:mr-8 flex flex-col items-center">
                 <img src="/logo.png" alt="Logo" className="w-24" />
-                <span className="text-[#00b3e6] text-2xl font-bold mt-2">
-                  CapIA<span className="text-[#FF955C]">.ai</span>
+                <span className="text-2xl font-bold ">
+                  Cap<span className="text-[#00b3e6]">IA</span>.ai
                 </span>
               </div>
 

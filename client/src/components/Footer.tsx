@@ -163,8 +163,8 @@ export default function Footer() {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center mb-4">
-              <span className="text-[#00b3e6] text-2xl font-bold">
-                CapIA<span className="text-[#FF955C]">.ai</span>
+              <span className="text-2xl font-bold ">
+                Cap<span className="text-[#00b3e6]">IA</span>.ai
               </span>
             </div>
             <p className="text-[#D3D3D3] mb-4">
