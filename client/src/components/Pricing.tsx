@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 interface PricingFeature {
   text: string;
@@ -144,18 +145,20 @@ export default function Pricing() {
               )}
 
               <div className="mt-auto">
-                <motion.button
-                  className={`w-full py-2 px-4 rounded-md flex items-center justify-center ${
-                    plan.highlighted
-                      ? "bg-[#00b3e6] text-black hover:bg-[#00b3e6]/90"
-                      : "bg-[#202B31] border border-gray-700 text-white hover:bg-[#00b3e6] hover:text-black hover:border-[#00b3e6] group-hover:bg-[#00b3e6] group-hover:text-black group-hover:border-[#00b3e6]"
-                  } transition-colors duration-200`}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <span>{plan.ctaText}</span>
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </motion.button>
+                <Link href="/alpha">
+                  <motion.button
+                    className={`w-full py-2 px-4 rounded-md flex items-center justify-center ${
+                      plan.highlighted
+                        ? "bg-[#00b3e6] text-black hover:bg-[#00b3e6]/90"
+                        : "bg-[#202B31] border border-gray-700 text-white hover:bg-[#00b3e6] hover:text-black hover:border-[#00b3e6] group-hover:bg-[#00b3e6] group-hover:text-black group-hover:border-[#00b3e6]"
+                    } transition-colors duration-200`}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <span>{plan.ctaText}</span>
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </motion.button>
+                </Link>
               </div>
             </motion.div>
           ))}
