@@ -173,22 +173,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/capia-ai"
                 className="text-[#D3D3D3] hover:text-[#00b3e6] transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-[#D3D3D3] hover:text-[#00b3e6] transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="text-[#D3D3D3] hover:text-[#00b3e6] transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
               </a>
             </div>
           </motion.div>
@@ -204,37 +192,14 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
                 >
-                  About
-                </a>
+                  About us
+                </Link>
               </li>
-              <li>
-                <a
-                  href="#features"
-                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-                >
-                  Features
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-                >
-                  Blog
-                </a>
-              </li>
+
               <li>
                 <button
                   onClick={openContactDialog}
@@ -242,6 +207,15 @@ export default function Footer() {
                 >
                   Contact Us
                 </button>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/capia-ai"
+                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
+                  target="_blank"
+                >
+                  Linkedin
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -254,23 +228,23 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h4 className="text-white font-semibold mb-4">Support</h4>
+            <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/360"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
                 >
-                  Help Center
-                </a>
+                  Revenue 360
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/pricing"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
                 >
-                  API Documentation
-                </a>
+                  Pricing
+                </Link>
               </li>
               <li>
                 <a

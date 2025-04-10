@@ -53,17 +53,18 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center space-x-8">
             <Link
+              href="/"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
+            >
+              Home
+            </Link>
+            <Link
               href="/360"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
               Revenue 360
             </Link>
-            <Link
-              href="/about"
-              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
-            >
-              About us
-            </Link>
+
             <Link
               href="/pricing"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
@@ -112,17 +113,18 @@ export default function Navbar() {
         >
           <div className="p-4 space-y-6">
             <Link
+              href="/"
+              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
+            >
+              Home
+            </Link>
+            <Link
               href="/360"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
             >
               Revenue 360
             </Link>
-            <Link
-              href="/about"
-              className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}
-            >
-              About us
-            </Link>
+
             <Link
               href="/pricing"
               className={`text-white hover:text-[#00b3e6] transition-colors font-arial ${underlineHoverAnimation}`}

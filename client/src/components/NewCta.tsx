@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { fadeIn, popAnimation } from "@/lib/animations";
+import { Link } from "wouter";
 
 export default function NewCta() {
   return (
@@ -38,13 +39,15 @@ export default function NewCta() {
 
               <div className="flex flex-col space-y-4">
                 <motion.div {...popAnimation}>
-                  <Button className="w-full px-8 py-7 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-lg">
-                    Start Your Free Trial Today
-                  </Button>
+                  <Link href="/alpha">
+                    <Button className="w-full px-8 py-7 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-lg">
+                      Start Your Free Trial Today
+                    </Button>
+                  </Link>
                 </motion.div>
                 <motion.div {...popAnimation}>
                   <Button className="w-full px-8 py-7 bg-[#F1425A] hover:bg-[#F1425A]/90 text-white text-lg">
-                    Schedule a Demo in 15 Minutes
+                    Schedule a Demo for 15 Minutes
                   </Button>
                 </motion.div>
               </div>

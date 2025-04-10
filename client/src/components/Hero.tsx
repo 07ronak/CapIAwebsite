@@ -7,6 +7,7 @@ import {
   popAnimation,
 } from "@/lib/animations";
 import { Shield } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Hero() {
   return (
@@ -34,14 +35,16 @@ export default function Hero() {
               {...fadeIn(0.6)}
             >
               <motion.div {...popAnimation}>
-                <Button className="w-full sm:w-auto px-6 py-6 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-base font-medium">
-                  Get Started for Free
-                </Button>
+                <Link href="/alpha">
+                  <Button className="w-full sm:w-auto px-6 py-6 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-base font-medium">
+                    Get Started for Free
+                  </Button>
+                </Link>
               </motion.div>
               <motion.div {...popAnimation}>
                 {/* #FF955C , #FF9F68  */}
                 <Button className="w-full sm:w-auto px-6 py-6 bg-[#FF955C] hover:bg-[#FF955C]/90 text-white text-base font-medium">
-                  See CapIA.ai in Action
+                  Schedule a Demo
                 </Button>
               </motion.div>
             </motion.div>
