@@ -17,7 +17,7 @@ export default function Hero() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm">
         <div className="md:flex items-center md:gap-12">
-          <motion.div className="md:w-1/2 mb-10 md:mb-0" {...slideInLeft()}>
+          <motion.div className="md:w-2/5 mb-10 md:mb-0" {...slideInLeft()}>
             <motion.h1
               className="text-4xl md:text-5xl font-bold text-white leading-tight"
               {...fadeIn(0.2)}
@@ -49,7 +49,7 @@ export default function Hero() {
               </motion.div>
             </motion.div>
           </motion.div>
-          <motion.div className="md:w-1/2" {...slideInRight(0.3)}>
+          <motion.div className="md:w-3/5" {...slideInRight(0.3)}>
             <div className="relative rounded-lg overflow-hidden shadow-2xl border border-gray-800">
               {/* Dashboard visualization image */}
               <img
