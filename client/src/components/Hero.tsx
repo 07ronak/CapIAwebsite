@@ -23,10 +23,13 @@ function App() {
               {...fadeIn(0.2)}
             >
               Smarter Finances for Startups—
-              <span className="text-[#00b3e6] md:text-3xl">
-                Unify, Predict, Grow.
-              </span>
             </motion.h1>
+            <motion.span
+              className="block text-[#00b3e6] text-xl sm:text-2xl md:text-3xl mt-2"
+              {...fadeIn(0.3)}
+            >
+              Unify, Predict, Grow.
+            </motion.span>
             <motion.p
               className="mt-4 sm:mt-6 text-lg sm:text-xl text-[#D3D3D3] max-w-3xl mx-auto"
               {...fadeIn(0.4)}
@@ -53,13 +56,16 @@ function App() {
               </motion.div>
             </motion.div>
           </motion.div>
-          <motion.div className="w-full" {...slideInRight(0.3)}>
-            <div className="relative rounded-lg overflow-hidden shadow-2xl border border-gray-800 max-w-4xl mx-auto">
+          <motion.div
+            className="w-full flex justify-center"
+            {...slideInRight(0.3)}
+          >
+            <div className="relative rounded-lg overflow-hidden shadow-2xl max-w-4xl">
               {/* Dashboard visualization image */}
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
                 alt="CapIA.ai Dashboard Preview"
-                className="w-20"
+                className="w-full"
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent opacity-40"></div>
