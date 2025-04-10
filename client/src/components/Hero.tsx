@@ -12,10 +12,10 @@ import { Link } from "wouter";
 function App() {
   return (
     <section
-      className="bg-gradient-to-br from-[#0E0E0E] to-black h-screen flex items-center"
+      className="bg-gradient-to-br from-[#0E0E0E] to-black min-h-screen flex items-center"
       id="hero"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-sm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-sm w-full">
         <div className="flex flex-col items-center justify-center space-y-8">
           <motion.div className="w-full text-center" {...slideInLeft()}>
             <motion.h1
@@ -31,7 +31,7 @@ function App() {
               Unify, Predict, Grow.
             </motion.span>
             <motion.p
-              className="mt-4 sm:mt-6 text-base text-[#D3D3D3] max-w-6xl mx-auto"
+              className="mt-4 sm:mt-6 text-base text-[#D3D3D3] mx-auto"
               {...fadeIn(0.4)}
             >
               CapIA.ai unifies your financial data, delivers AI-powered
@@ -60,12 +60,12 @@ function App() {
             className="w-full flex justify-center"
             {...slideInRight(0.3)}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl mx-auto w-full sm:w-3/4 md:w-2/3 max-w-6xl">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl w-full">
               {/* Dashboard visualization image */}
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
                 alt="CapIA.ai Dashboard Preview"
-                className="w-full"
+                className="w-full h-36 sm:h-44 md:h-60 lg:h-[16rem] xl:h-[20rem] object-cover"
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent opacity-40"></div>
