@@ -19,19 +19,19 @@ function App() {
         <div className="flex flex-col items-center justify-center space-y-8">
           <motion.div className="w-full text-center" {...slideInLeft()}>
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-4xl font-bold text-white leading-tight"
               {...fadeIn(0.2)}
             >
-              Smarter Finances for Startups—
+              Smarter Finances for Startups
             </motion.h1>
             <motion.span
-              className="block text-[#00b3e6] text-xl sm:text-2xl md:text-3xl mt-2"
+              className="block text-[#00b3e6] text-xl sm:text-2xl md:text-2xl mt-2"
               {...fadeIn(0.3)}
             >
               Unify, Predict, Grow.
             </motion.span>
             <motion.p
-              className="mt-4 sm:mt-6 text-lg sm:text-xl text-[#D3D3D3] max-w-3xl mx-auto"
+              className="mt-4 sm:mt-6 text-base text-[#D3D3D3] max-w-6xl mx-auto"
               {...fadeIn(0.4)}
             >
               CapIA.ai unifies your financial data, delivers AI-powered
@@ -60,7 +60,7 @@ function App() {
             className="w-full flex justify-center"
             {...slideInRight(0.3)}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl max-w-4xl">
+            <div className="relative rounded-lg overflow-hidden shadow-2xl mx-auto w-full sm:w-3/4 md:w-2/3 max-w-6xl">
               {/* Dashboard visualization image */}
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
