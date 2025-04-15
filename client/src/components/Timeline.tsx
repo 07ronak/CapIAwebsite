@@ -22,7 +22,7 @@ export default function Timeline() {
       number: "1",
       title: "Get Started with Ease",
       description:
-        "Seamlessly integrate your financial tools (QuickBooks, Stripe, HubSpot) and get a unified view of your finances in minutes.",
+        "Integrate your financial tools and get a unified view of your finances in minutes",
       imageUrl:
         "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     },
@@ -31,16 +31,16 @@ export default function Timeline() {
       number: "7",
       title: "Gain Real-Time Insights",
       description:
-        "Track cash flow, burn rate, and runway in real-time. Identify overdue invoices and at-risk customers with actionable alerts.",
+        "Track cash flow, motion burn rate, and identify growth oppotunities with actionable insights.",
       imageUrl:
         "https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     },
     {
       day: "Day",
       number: "30",
-      title: "Make Smarter Decisions with Predictive Analytics",
+      title: "Make Smarter Decisions",
       description:
-        "Use AI-powered forecasts to plan for growth, optimize spending, and extend your runway.",
+        "Use AI-powered forecast to optimize spending and extend your runway with confidence",
       imageUrl:
         "https://images.unsplash.com/photo-1607968565043-36af90dde238?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
     },

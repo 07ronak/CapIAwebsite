@@ -41,13 +41,13 @@ export default function NewCta() {
                 <motion.div {...popAnimation}>
                   <Link href="/alpha">
                     <Button className="w-full px-8 py-7 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-lg">
-                      Start Your Free Trial Today
+                      Sign Up and Get Started
                     </Button>
                   </Link>
                 </motion.div>
                 <motion.div {...popAnimation}>
                   <Button className="w-full px-8 py-7 bg-[#F1425A] hover:bg-[#F1425A]/90 text-white text-lg">
-                    Schedule a Demo for 15 Minutes
+                    Talk to us about your needs
                   </Button>
                 </motion.div>
               </div>

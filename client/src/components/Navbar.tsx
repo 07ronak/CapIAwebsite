@@ -82,7 +82,7 @@ export default function Navbar() {
   active:transform active:scale-95"
               href="/alpha"
             >
-              Get Started
+              LogIn
             </Link>
           </div>
           <div className="flex md:hidden items-center">
