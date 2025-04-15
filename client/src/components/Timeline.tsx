@@ -20,7 +20,7 @@ export default function Timeline() {
       number: "1",
       title: "Get Started with Ease",
       description:
-        "Integrate your financial tools and get a unified view of your finances in minutes",
+        "Integrate your financial tools and get a unified view of your finances in minutes.",
     },
     {
       day: "Day",
@@ -34,7 +34,7 @@ export default function Timeline() {
       number: "30",
       title: "Make Smarter Decisions",
       description:
-        "Use AI-powered forecast to optimize spending and extend your runway with confidence",
+        "Use AI-powered forecast to optimize spending and extend your runway with confidence.",
     },
   ];
 
@@ -49,7 +49,7 @@ export default function Timeline() {
 
   return (
     <section
-      className="bg-gradient-to-b from-[#0d1d15] to-[#0a2028] min-h-screen flex items-center"
+      className="bg-[#f4f1de] min-h-screen flex items-center"
       id="timeline"
       ref={timelineRef}
     >
@@ -59,12 +59,13 @@ export default function Timeline() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            How Cap<span className="text-[#00b3e6]">IA</span>.ai Transforms Your Startup's Finances in{" "}
-            <span className="text-[#3cb043]">Just 30 Days</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8">
+            How Cap<span className="text-[#00b3e6]">IA</span>.ai Transforms Your
+            Startup's Finances in{" "}
+            <span className="text-[#f8851a]">Just 30 Days</span>
           </h2>
         </motion.div>
-
+        {/*[#9ECD4E]*/}
         <div className="relative">
           {/* Timeline connector line (desktop only) */}
           <div className="hidden md:block absolute top-[40px] left-0 right-0 h-1 bg-[#00b3e6] z-0"></div>
@@ -118,9 +119,9 @@ export default function Timeline() {
                   custom={index * 0.2}
                 >
                   <motion.div
-                    className={`bg-black p-4 rounded-full border-2 border-[#00b3e6] mx-auto w-20 h-20 flex flex-col items-center justify-center mb-6 z-10 relative ${
+                    className={`bg-black p-4 rounded-full border-2 border-[#00b3e6] mx-auto w-20 h-20 flex flex-col items-center justify-center mb-10 z-10 relative ${
                       isActive
-                        ? "shadow-[0_0_15px_5px_rgba(0,179,230,0.5)]"
+                        ? "shadow-[0_0_10px_0px_rgba(0,179,230,0.5)]"
                         : ""
                     }`}
                     whileHover={{ scale: 1.1 }}
@@ -135,16 +136,16 @@ export default function Timeline() {
                     </span>
                   </motion.div>
                   <motion.div
-                    className={`bg-[#0e2024] rounded-lg p-8 border border-gray-800 flex flex-col h-full ${
+                    className={`bg-[#0e2024] rounded-lg px-6 pt-8 border border-gray-800 flex flex-col h-64 ${
                       isActive
-                        ? "shadow-[0_0_15px_5px_rgba(60,176,67,0.3)]"
+                        ? "shadow-[0_0_15px_5px_rgba(0,179,230,0.5)]"
                         : ""
                     }`}
-                    animate={isActive ? { scale: 1.05 } : { scale: 1 }}
+                    animate={isActive ? { scale: 1.15 } : { scale: 1 }}
                     transition={{ duration: 0.3 }}
                   >
                     <div>
-                      <h3 className="text-lg md:text-xl font-bold text-[#3cb043] mb-4">
+                      <h3 className="text-lg md:text-xl font-bold text-[#00b3e6] mb-4">
                         {item.title}
                       </h3>
                       <p className="text-[#E8E8E8] text-base md:text-lg">
