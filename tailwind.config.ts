@@ -5,6 +5,15 @@ export default {
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        "3xl": "1920px", // for Full HD width and up
+        "4k": "2560px", // Targeting QHD/4K width specifically
+      },
+      maxWidth: {
+        '8xl': '1440px', // Example: Limit max content width even on huge screens
+        '9xl': '1600px',
+        '10xl': '1920px',
+      },
       fontFamily: {
         arial: ["Arial", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],

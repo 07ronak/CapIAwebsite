@@ -7,6 +7,7 @@ import Comparison from "@/components/Comparison";
 import CtaSection from "@/components/CtaSection";
 import Footer from "@/components/Footer";
 import NewCta from "@/components/NewCta";
+import WhatWeDo from "@/components/WhatWeDo";
 
 export default function Home() {
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <KeyFeatures />
+        <WhatWeDo />
         <Timeline />
         <Comparison />
         {/* <CtaSection /> */}
