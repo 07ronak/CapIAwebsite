@@ -94,36 +94,38 @@ export default function Comparison() {
 
   return (
     <section
-      className="bg-black min-h-screen flex items-center"
+      className="bg-black min-h-screen flex items-center justify-center"
       id="comparison"
     >
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto px-4 3xl:max-w-8xl 4k:max-w-10xl 3xl:px-8 4k:px-12">
         <motion.div
-          className="text-center mb-12"
+          className="text-center mb-12 3xl:mb-16 4k:mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl 3xl:text-5xl 4k:text-6xl font-bold text-white">
             Transforming Challenges into Opportunities
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 3xl:gap-8 4k:gap-12">
           {/* Without CapIA.ai */}
           <motion.div
-            className="bg-[#202B31] rounded-lg p-6 border border-gray-800"
+            className="bg-[#202B31] rounded-lg p-6 3xl:p-8 4k:p-10 border border-gray-800"
             {...slideInLeft(0.2)}
           >
-            <div className="flex items-center mb-4">
-              <div className="bg-[#F1425A]/20 rounded-full p-2 mr-3">
-                <X className="text-[#F1425A] h-5 w-5" />
+            <div className="flex items-center mb-4 3xl:mb-6 4k:mb-8">
+              <div className="bg-[#F1425A]/20 rounded-full p-2 mr-3 3xl:p-3 4k:p-4 3xl:mr-4 4k:mr-5">
+                <X className="text-[#F1425A] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-8 4k:w-8" />
               </div>
-              <h3 className="text-xl font-bold text-white">Without CapIA.ai</h3>
+              <h3 className="text-xl font-bold text-white 3xl:text-2xl 4k:text-3xl">
+                Without CapIA.ai
+              </h3>
             </div>
 
-            <ul className="space-y-4">
+            <ul className="space-y-4 3xl:space-y-6 4k:space-y-8">
               {challenges.map((item, index) => (
                 <motion.li
                   key={index}
@@ -133,14 +135,16 @@ export default function Comparison() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
                 >
-                  <div className="mr-3 mt-1">
-                    <AlertCircle className="text-[#F1425A] h-5 w-5" />
+                  <div className="mr-3 mt-1 3xl:mr-4 4k:mr-5 3xl:mt-1.5 4k:mt-2">
+                    <AlertCircle className="text-[#F1425A] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white text-base">
+                    <h4 className="font-semibold text-white text-base 3xl:text-lg 4k:text-xl">
                       {item.title}
                     </h4>
-                    <p className="text-[#D3D3D3] text-sm">{item.description}</p>
+                    <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-lg">
+                      {item.description}
+                    </p>
                   </div>
                 </motion.li>
               ))}
@@ -149,17 +153,19 @@ export default function Comparison() {
 
           {/* With CapIA.ai */}
           <motion.div
-            className="bg-[#00b3e6]/10 rounded-lg p-6 border border-[#00b3e6]"
+            className="bg-[#00b3e6]/10 rounded-lg p-6 3xl:p-8 4k:p-10 border border-[#00b3e6]"
             {...slideInRight(0.2)}
           >
-            <div className="flex items-center mb-4">
-              <div className="bg-[#00b3e6]/20 rounded-full p-2 mr-3">
-                <Check className="text-[#00b3e6] h-5 w-5" />
+            <div className="flex items-center mb-4 3xl:mb-6 4k:mb-8">
+              <div className="bg-[#00b3e6]/20 rounded-full p-2 mr-3 3xl:p-3 4k:p-4 3xl:mr-4 4k:mr-5">
+                <Check className="text-[#00b3e6] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-8 4k:w-8" />
               </div>
-              <h3 className="text-xl font-bold text-white">With CapIA.ai</h3>
+              <h3 className="text-xl font-bold text-white 3xl:text-2xl 4k:text-3xl">
+                With CapIA.ai
+              </h3>
             </div>
 
-            <ul className="space-y-4">
+            <ul className="space-y-4 3xl:space-y-6 4k:space-y-8">
               {solutions.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -171,12 +177,12 @@ export default function Comparison() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
                   >
-                    <div className="mr-3 mt-1">
-                      <CheckCircle className="text-[#00b3e6] h-5 w-5" />
+                    <div className="mr-3 mt-1 3xl:mr-4 4k:mr-5 3xl:mt-1.5 4k:mt-2">
+                      <CheckCircle className="text-[#00b3e6] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center">
-                        <h4 className="font-semibold text-white text-base mr-2">
+                        <h4 className="font-semibold text-white text-base mr-2 3xl:text-lg 4k:text-xl 3xl:mr-3 4k:mr-4">
                           {item.title}
                         </h4>
                         <AnimatePresence>
@@ -187,19 +193,19 @@ export default function Comparison() {
                                 activeIconIndex === index
                                   ? {
                                       scale: [1, 1.3, 1],
-                                      color: ["#00b3e6", "#ffffff", "#00b3e6"],
+                                      color: ["#00b3e6", "#ffff", "#00b3e6"],
                                     }
                                   : { scale: 1, color: "#00b3e6" }
                               }
                               transition={{ duration: 1, ease: "easeInOut" }}
                               className="text-[#00b3e6]"
                             >
-                              <Icon className="h-5 w-5" />
+                              <Icon className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
                             </motion.div>
                           )}
                         </AnimatePresence>
                       </div>
-                      <p className="text-[#D3D3D3] text-sm">
+                      <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-lg">
                         {item.description}
                       </p>
                     </div>
