@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 import { slideInLeft, slideInRight } from "@/lib/animations";
-import { AlertCircle, CheckCircle, X, Check } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
+import {
+  AlertCircle,
+  CheckCircle,
+  X,
+  Check,
+  Goal,
+  DollarSign,
+  Clock,
+  Rocket,
+  ShieldCheck,
+} from "lucide-react";
 
 interface ComparisonItem {
   title: string;
