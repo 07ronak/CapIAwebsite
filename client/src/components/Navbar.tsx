@@ -78,7 +78,7 @@ export default function Navbar() {
               className="bg-[#00b3e6] hover:bg-[#00b3e6]/90
                 text-[#F5F5F5] hover:text-black font-arial
                 transition-all duration-300 ease-in-out
-                font-medium rounded-md px-6 py-3
+                font-medium rounded-md px-4 py-1
                 shadow-md hover:shadow-xl
                 border border-transparent hover:border-[#00b3e6]/30
                 focus:ring-4 focus:ring-[#00b3e6]/30
