@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { slideInLeft, slideInRight } from "@/lib/animations";
 import { useRef, useState, useEffect } from "react";
 import {
@@ -16,6 +16,7 @@ import {
 interface ComparisonItem {
   title: string;
   description: string;
+  icon?: React.ElementType;
 }
 
 export default function Comparison() {
@@ -51,35 +52,52 @@ export default function Comparison() {
       title: "Seize Opportunities",
       description:
         "Unified financial data and real-time insights empower faster, smarter decisions to fuel growth.",
+      icon: Goal,
     },
     {
       title: "Ensure Accuracy",
       description:
-        "Automated workflows and cash flow tracking reduce errors and improve financial stability.",
+        "Automated workflows and cash flow visibility reduce errors and improve financial stability.",
+      icon: DollarSign,
     },
     {
       title: "Save Time",
       description:
         "Streamline reconciliation and reporting, freeing up time to focus on scaling.",
+      icon: Clock,
     },
     {
       title: "Boost Revenue",
       description:
-        "AI-powered customer insights help you retain customers and unlock new revenue streams.",
+        "AI-powered customer insights help retain customers and unlock new revenue streams.",
+      icon: Rocket,
     },
     {
       title: "Build Confidence",
       description:
-        "Investor-ready reports and predictive analytics strengthen your funding pitch and financial credibility.",
+        "Investor-ready reports and predictive analytics strengthen funding pitch and credibility.",
+      icon: ShieldCheck,
     },
   ];
 
+  // State to track which icon is currently highlighted
+  const [activeIconIndex, setActiveIconIndex] = useState(0);
+
+  // Animation cycle
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIconIndex((prev) => (prev + 1) % solutions.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [solutions.length]);
+
   return (
     <section
-      className=" bg-black min-h-screen flex items-center"
+      className="bg-black min-h-screen flex items-center"
       id="comparison"
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 ">
+      <div className="max-w-5xl mx-auto px-4">
         <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
@@ -87,7 +105,7 @@ export default function Comparison() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             Transforming Challenges into Opportunities
           </h2>
         </motion.div>
@@ -142,26 +160,52 @@ export default function Comparison() {
             </div>
 
             <ul className="space-y-4">
-              {solutions.map((item, index) => (
-                <motion.li
-                  key={index}
-                  className="flex"
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
-                >
-                  <div className="mr-3 mt-1">
-                    <CheckCircle className="text-[#00b3e6] h-5 w-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white text-base">
-                      {item.title}
-                    </h4>
-                    <p className="text-[#D3D3D3] text-sm">{item.description}</p>
-                  </div>
-                </motion.li>
-              ))}
+              {solutions.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <motion.li
+                    key={index}
+                    className="flex"
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
+                  >
+                    <div className="mr-3 mt-1">
+                      <CheckCircle className="text-[#00b3e6] h-5 w-5" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center">
+                        <h4 className="font-semibold text-white text-base mr-2">
+                          {item.title}
+                        </h4>
+                        <AnimatePresence>
+                          {Icon && (
+                            <motion.div
+                              initial={{ scale: 1 }}
+                              animate={
+                                activeIconIndex === index
+                                  ? {
+                                      scale: [1, 1.3, 1],
+                                      color: ["#00b3e6", "#ffffff", "#00b3e6"],
+                                    }
+                                  : { scale: 1, color: "#00b3e6" }
+                              }
+                              transition={{ duration: 1, ease: "easeInOut" }}
+                              className="text-[#00b3e6]"
+                            >
+                              <Icon className="h-5 w-5" />
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                      <p className="text-[#D3D3D3] text-sm">
+                        {item.description}
+                      </p>
+                    </div>
+                  </motion.li>
+                );
+              })}
             </ul>
           </motion.div>
         </div>
