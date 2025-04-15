@@ -60,17 +60,21 @@ function App() {
             className="w-full flex justify-center"
             {...slideInRight(0.3)}
           >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl w-full">
-              {/* Dashboard visualization image */}
-              <img
-                src="/Screen Recording 2025-04-08 at 5.08.23 PM.gif"
-                alt="CapIA.ai Dashboard Preview"
-                className="w-full object-cover"
-              />
+            <div className="flex justify-center items-center w-full">
+              <div className="relative border-4 border-gray-800 rounded-3xl shadow-2xl bg-black w-full max-w-5xl aspect-[3200/1688] overflow-hidden">
+                {/* Dashboard visualization image */}
+                <img
+                  src="/Trimmed.gif"
+                  alt="CapIA.ai Dashboard Preview"
+                  className="w-full h-full object-cover"
+                />
 
-              {/*  h-36 sm:h-44 md:h-60 lg:h-[16rem] xl:h-[20rem] */}
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent opacity-40"></div>
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent opacity-40"></div>
+
+                {/* Optional: Side button */}
+                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-1.5 h-10 bg-gray-700 rounded-l-md"></div>
+              </div>
             </div>
           </motion.div>
         </div>

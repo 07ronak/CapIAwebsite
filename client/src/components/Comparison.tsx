@@ -64,7 +64,10 @@ export default function Comparison() {
   ];
 
   return (
-    <section className="py-16 bg-black min-h-screen" id="comparison">
+    <section
+      className=" bg-black min-h-screen flex items-center"
+      id="comparison"
+    >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 ">
         <motion.div
           className="text-center mb-12"
@@ -73,7 +76,7 @@ export default function Comparison() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-5xl font-bold text-white">
+          <h2 className="text-2xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl font-bold text-white">
             Transforming Challenges into Opportunities
           </h2>
         </motion.div>

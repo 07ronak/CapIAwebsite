@@ -192,12 +192,11 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="/about"
+                <button
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
                 >
-                  About us
-                </Link>
+                  What we do
+                </button>
               </li>
 
               <li>
@@ -231,6 +230,14 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2">
               <li>
+                <a
+                  href="#"
+                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
+                >
+                  Why CapIA?
+                </a>
+              </li>
+              <li>
                 <Link
                   href="/360"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
@@ -245,23 +252,6 @@ export default function Footer() {
                 >
                   Pricing
                 </Link>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation}`}
-                >
-                  Community
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="flex items-center text-[#D3D3D3] hover:text-[#00b3e6] transition-colors"
-                >
-                  <span>Chat with us</span>
-                  <MessageCircle className="ml-2 h-4 w-4" />
-                </a>
               </li>
             </ul>
           </motion.div>
