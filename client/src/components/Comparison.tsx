@@ -125,7 +125,7 @@ export default function Comparison() {
               </h3>
             </div>
 
-            <ul className="space-y-4 3xl:space-y-6 4k:space-y-8">
+            <ul className="space-y-4 3xl:space-y-6 4k:space-y-12">
               {challenges.map((item, index) => (
                 <motion.li
                   key={index}
@@ -142,7 +142,7 @@ export default function Comparison() {
                     <h4 className="font-semibold text-white text-base 3xl:text-lg 4k:text-xl">
                       {item.title}
                     </h4>
-                    <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-lg">
+                    <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-xl">
                       {item.description}
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function Comparison() {
               </h3>
             </div>
 
-            <ul className="space-y-4 3xl:space-y-6 4k:space-y-8">
+            <ul className="space-y-4 3xl:space-y-6 4k:space-y-12">
               {solutions.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -205,7 +205,7 @@ export default function Comparison() {
                           )}
                         </AnimatePresence>
                       </div>
-                      <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-lg">
+                      <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-xl">
                         {item.description}
                       </p>
                     </div>
