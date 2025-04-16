@@ -10,9 +10,9 @@ export default {
         "4k": "2560px", // Targeting QHD/4K width specifically
       },
       maxWidth: {
-        '8xl': '1440px', // Example: Limit max content width even on huge screens
-        '9xl': '1600px',
-        '10xl': '1920px',
+        "8xl": "1440px", // Example: Limit max content width even on huge screens
+        "9xl": "1600px",
+        "10xl": "1920px",
       },
       fontFamily: {
         arial: ["Arial", "sans-serif"],
@@ -57,6 +57,14 @@ export default {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        capia: {
+          blue: "#6CABDD",
+          orange: "#F3AC75",
+          red: "#F1425A",
+          darkGray: "#202B31",
+          lightGray: "#D3D3D3",
+          black: "#000000",
+        },
         chart: {
           "1": "hsl(var(--chart-1))",
           "2": "hsl(var(--chart-2))",

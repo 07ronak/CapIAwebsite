@@ -1,0 +1,72 @@
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="900" height="500" fill="#0D1117" />
+  
+  <!-- Dashboard elements mock based on the screenshot -->
+  <!-- Dashboard sidebar -->
+  <rect x="0" y="0" width="100" height="500" fill="#161B22" />
+  
+  <!-- Dashboard header -->
+  <rect x="100" y="0" width="800" height="60" fill="#161B22" />
+  
+  <!-- Search bar -->
+  <rect x="420" y="15" width="300" height="30" rx="15" fill="#21262D" />
+  <text x="450" y="35" font-family="Arial" font-size="14" fill="#8B949E">Ask me anything...</text>
+  <circle cx="435" cy="30" r="8" fill="#8B949E" />
+  
+  <!-- Main dashboard panels -->
+  <!-- Alert panel 1 -->
+  <rect x="130" y="80" width="320" height="120" rx="8" fill="#21262D" />
+  <rect x="130" y="80" width="10" height="120" rx="4" fill="#F85149" />
+  <text x="150" y="100" font-family="Arial" font-size="15" font-weight="bold" fill="#F85149">Critical: Low Runway Alert</text>
+  <text x="150" y="120" font-family="Arial" font-size="14" fill="#C9D1D9">Current burn rate suggests runway below 12 months.</text>
+  
+  <!-- Alert panel 2 -->
+  <rect x="480" y="80" width="320" height="120" rx="8" fill="#21262D" />
+  <rect x="480" y="80" width="10" height="120" rx="4" fill="#58A6FF" />
+  <text x="500" y="100" font-family="Arial" font-size="15" font-weight="bold" fill="#58A6FF">Cost Optimization Strategy</text>
+  <text x="500" y="120" font-family="Arial" font-size="14" fill="#C9D1D9">AI analysis suggests potential savings of $2,300/month.</text>
+  
+  <!-- Metrics Cards -->
+  <!-- Card 1 -->
+  <rect x="130" y="220" width="150" height="100" rx="8" fill="#21262D" />
+  <text x="140" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#C9D1D9">Cash Flow</text>
+  <text x="140" y="270" font-family="Arial" font-size="18" fill="#C9D1D9">$342,500</text>
+  
+  <!-- Card 2 -->
+  <rect x="300" y="220" width="150" height="100" rx="8" fill="#21262D" />
+  <text x="310" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#C9D1D9">Revenue</text>
+  <text x="310" y="270" font-family="Arial" font-size="18" fill="#C9D1D9">$52,000</text>
+  
+  <!-- Card 3 -->
+  <rect x="470" y="220" width="150" height="100" rx="8" fill="#21262D" />
+  <text x="480" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#C9D1D9">Churn Rate</text>
+  <text x="480" y="270" font-family="Arial" font-size="18" fill="#C9D1D9">2.5%</text>
+  
+  <!-- Card 4 -->
+  <rect x="640" y="220" width="150" height="100" rx="8" fill="#21262D" />
+  <text x="650" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#C9D1D9">Profit Margin</text>
+  <text x="650" y="270" font-family="Arial" font-size="18" fill="#C9D1D9">45.5%</text>
+  
+  <!-- Chart -->
+  <rect x="130" y="340" width="660" height="150" rx="8" fill="#21262D" />
+  <text x="150" y="365" font-family="Arial" font-size="16" font-weight="bold" fill="#C9D1D9">Revenue Projection</text>
+  
+  <!-- Simplified chart lines -->
+  <polyline points="150,450 200,420 250,435 300,380 350,440 400,370 450,330 500,380 550,350 600,330 650,310" 
+            fill="none" stroke="#58A6FF" stroke-width="3" />
+  <polyline points="150,440 200,442 250,438 300,445 350,440 400,442 450,444 500,446 550,442 600,445 650,440" 
+            fill="none" stroke="#F85149" stroke-width="3" />
+            
+  <!-- Chart bars -->
+  <rect x="180" y="440" width="20" height="40" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="230" y="430" width="20" height="50" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="280" y="410" width="20" height="70" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="330" y="420" width="20" height="60" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="380" y="400" width="20" height="80" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="430" y="395" width="20" height="85" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="480" y="390" width="20" height="90" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="530" y="385" width="20" height="95" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="580" y="380" width="20" height="100" fill="#58A6FF" fill-opacity="0.3" />
+  <rect x="630" y="375" width="20" height="105" fill="#58A6FF" fill-opacity="0.3" />
+</svg>

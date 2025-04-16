@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" rx="8" fill="#121212"/>
+  
+  <!-- Chart title -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">Cash Flow Forecast</text>
+  
+  <!-- Chart area background -->
+  <rect x="50" y="50" width="300" height="200" rx="4" fill="#1E293B" stroke="#333333" stroke-width="1"/>
+  
+  <!-- Grid lines -->
+  <line x1="50" y1="90" x2="350" y2="90" stroke="#333333" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="50" y1="130" x2="350" y2="130" stroke="#333333" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="50" y1="170" x2="350" y2="170" stroke="#333333" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="50" y1="210" x2="350" y2="210" stroke="#333333" stroke-width="1" stroke-dasharray="4 4"/>
+  
+  <!-- X-axis labels -->
+  <text x="75" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">May</text>
+  <text x="125" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">Jun</text>
+  <text x="175" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">Jul</text>
+  <text x="225" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">Aug</text>
+  <text x="275" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">Sep</text>
+  <text x="325" y="235" text-anchor="middle" fill="#999999" font-family="Arial" font-size="10">Oct</text>
+  
+  <!-- Y-axis labels -->
+  <text x="45" y="210" text-anchor="end" fill="#999999" font-family="Arial" font-size="10">0</text>
+  <text x="45" y="170" text-anchor="end" fill="#999999" font-family="Arial" font-size="10">25K</text>
+  <text x="45" y="130" text-anchor="end" fill="#999999" font-family="Arial" font-size="10">50K</text>
+  <text x="45" y="90" text-anchor="end" fill="#999999" font-family="Arial" font-size="10">75K</text>
+  <text x="45" y="50" text-anchor="end" fill="#999999" font-family="Arial" font-size="10">100K</text>
+  
+  <!-- Cash balance visualization -->
+  <!-- Actual cash balance (solid line) -->
+  <path d="M75 190 L125 170 L175 150" stroke="#3B82F6" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="75" cy="190" r="4" fill="#3B82F6"/>
+  <circle cx="125" cy="170" r="4" fill="#3B82F6"/>
+  <circle cx="175" cy="150" r="4" fill="#3B82F6"/>
+  
+  <!-- Forecast cash balance (dashed line) -->
+  <path d="M175 150 L225 120 L275 90 L325 70" stroke="#3B82F6" stroke-width="3" stroke-dasharray="6 3" stroke-linejoin="round"/>
+  <circle cx="225" cy="120" r="4" stroke="#3B82F6" stroke-width="2" fill="#1E293B"/>
+  <circle cx="275" cy="90" r="4" stroke="#3B82F6" stroke-width="2" fill="#1E293B"/>
+  <circle cx="325" cy="70" r="4" stroke="#3B82F6" stroke-width="2" fill="#1E293B"/>
+  
+  <!-- Income visualization (green bars) -->
+  <rect x="65" y="170" width="20" height="40" rx="2" fill="#10B981" opacity="0.6"/>
+  <rect x="115" y="150" width="20" height="60" rx="2" fill="#10B981" opacity="0.6"/>
+  <rect x="165" y="130" width="20" height="80" rx="2" fill="#10B981" opacity="0.6"/>
+  <rect x="215" y="110" width="20" height="100" rx="2" fill="#10B981" opacity="0.3"/>
+  <rect x="265" y="90" width="20" height="120" rx="2" fill="#10B981" opacity="0.3"/>
+  <rect x="315" y="80" width="20" height="130" rx="2" fill="#10B981" opacity="0.3"/>
+  
+  <!-- Expenses visualization (red bars) -->
+  <rect x="65" y="170" width="20" height="30" rx="2" fill="#EF4444" opacity="0.6" transform="translate(0, -30)"/>
+  <rect x="115" y="150" width="20" height="40" rx="2" fill="#EF4444" opacity="0.6" transform="translate(0, -40)"/>
+  <rect x="165" y="130" width="20" height="50" rx="2" fill="#EF4444" opacity="0.6" transform="translate(0, -50)"/>
+  <rect x="215" y="110" width="20" height="70" rx="2" fill="#EF4444" opacity="0.3" transform="translate(0, -70)"/>
+  <rect x="265" y="90" width="20" height="80" rx="2" fill="#EF4444" opacity="0.3" transform="translate(0, -80)"/>
+  <rect x="315" y="80" width="20" height="90" rx="2" fill="#EF4444" opacity="0.3" transform="translate(0, -90)"/>
+  
+  <!-- Legend -->
+  <rect x="50" y="260" width="12" height="12" rx="2" fill="#10B981" opacity="0.6"/>
+  <text x="70" y="270" fill="#E5E7EB" font-family="Arial" font-size="10">Income</text>
+  
+  <rect x="130" y="260" width="12" height="12" rx="2" fill="#EF4444" opacity="0.6"/>
+  <text x="150" y="270" fill="#E5E7EB" font-family="Arial" font-size="10">Expenses</text>
+  
+  <line x1="210" y1="265" x2="230" y2="265" stroke="#3B82F6" stroke-width="2"/>
+  <text x="240" y="270" fill="#E5E7EB" font-family="Arial" font-size="10">Actual Balance</text>
+  
+  <line x1="300" y1="265" x2="320" y2="265" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="330" y="270" fill="#E5E7EB" font-family="Arial" font-size="10">Forecast</text>
+</svg>

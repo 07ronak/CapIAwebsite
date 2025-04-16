@@ -664,7 +664,7 @@ function TransformationVisual() {
             </motion.div>
 
             <motion.div
-              className="relative h-24 3xl:h-32 4k:h-40 bg-capia-blue/10 rounded-lg 3xl:rounded-xl 4k:rounded-2xl border border-capia-blue/30 3xl:border-2 4k:border-3 p-4 3xl:p-5 4k:p-6"
+              className="relative h-12 md:h-24 lg:h-32 3xl:h-36 4k:h-44 bg-capia-blue/10 rounded-lg 3xl:rounded-xl 4k:rounded-2xl border border-capia-blue/30 3xl:border-2 4k:border-3 p-4 3xl:p-5 4k:p-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}

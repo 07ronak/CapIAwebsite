@@ -1,0 +1,20 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background is transparent -->
+  <rect width="200" height="60" fill="transparent" />
+  
+  <!-- Tree icon simplified -->
+  <g fill="#FFFFFF">
+    <path d="M30,10 L35,10 L35,20 L40,15 L45,20 L40,25 L45,30 L40,35 L35,30 L35,40 L30,40 L30,30 L25,35 L20,30 L25,25 L20,20 L25,15 L30,20 Z" />
+    <!-- Tree roots -->
+    <path d="M25,40 L30,45 L35,40" />
+  </g>
+  
+  <!-- Text Cap in white -->
+  <text x="60" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#FFFFFF">Cap</text>
+  
+  <!-- Text IA in blue -->
+  <text x="108" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#58A6FF">IA</text>
+  
+  <!-- Text .ai in white -->
+  <text x="130" y="35" font-family="Arial" font-size="24" font-weight="bold" fill="#FFFFFF">.ai</text>
+</svg>
