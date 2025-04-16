@@ -432,106 +432,106 @@ function SolutionVisual() {
   return (
     <div className="relative h-full w-full bg-gradient-to-br from-gray-900 to-capia-darkGray overflow-hidden">
       {/* CapiA platform representation */}
-      <div className="absolute inset-10 3xl:inset-12 4k:inset-14">
-        <div className="w-full h-full rounded-xl 3xl:rounded-2xl 4k:rounded-3xl border border-capia-blue/30 3xl:border-2 4k:border-3 bg-gray-900/70 overflow-hidden shadow-lg shadow-capia-blue/10 3xl:shadow-xl 3xl:shadow-capia-blue/15 4k:shadow-2xl 4k:shadow-capia-blue/20">
-          <div className="h-10 3xl:h-12 4k:h-14 border-b border-capia-blue/20 3xl:border-b-2 4k:border-b-3 bg-gray-800/80 flex items-center px-4 3xl:px-5 4k:px-6">
-            <div className="flex space-x-2 3xl:space-x-3 4k:space-x-4 mr-4 3xl:mr-5 4k:mr-6">
-              <div className="w-3 h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-capia-red"></div>
-              <div className="w-3 h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-capia-orange"></div>
-              <div className="w-3 h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-green-500"></div>
+      <div className="absolute inset-2 sm:inset-3 md:inset-4 lg:inset-6 xl:inset-7 2xl:inset-8 3xl:inset-10 4k:inset-12">
+        <div className="w-full h-full rounded-md sm:rounded-lg md:rounded-lg lg:rounded-xl 2xl:rounded-xl border border-capia-blue/30 3xl:border-2 4k:border-3 bg-gray-900/70 overflow-hidden shadow-md sm:shadow-lg lg:shadow-xl 2xl:shadow-xl shadow-capia-blue/10 3xl:shadow-2xl 3xl:shadow-capia-blue/15 4k:shadow-3xl 4k:shadow-capia-blue/20">
+          <div className="h-7 sm:h-8 md:h-9 lg:h-10 2xl:h-11 3xl:h-14 4k:h-16 border-b border-capia-blue/20 3xl:border-b-2 4k:border-b-3 bg-gray-800/80 flex items-center px-2 sm:px-3 md:px-3 lg:px-4 2xl:px-4 3xl:px-5 4k:px-6">
+            <div className="flex space-x-1 sm:space-x-1.5 md:space-x-1.5 lg:space-x-2 2xl:space-x-2 3xl:space-x-3 4k:space-x-4 mr-2 sm:mr-2.5 md:mr-3 lg:mr-3.5 2xl:mr-4 3xl:mr-5 4k:mr-6">
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 2xl:w-3 2xl:h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-capia-red"></div>
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 2xl:w-3 2xl:h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-capia-orange"></div>
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-2.5 md:h-2.5 lg:w-3 lg:h-3 2xl:w-3 2xl:h-3 3xl:w-4 3xl:h-4 4k:w-5 4k:h-5 rounded-full bg-green-500"></div>
             </div>
-            <span className="text-sm 3xl:text-base 4k:text-lg text-capia-blue font-medium">
+            <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base 3xl:text-lg 4k:text-xl text-capia-blue font-medium">
               CapiA.ai Platform
             </span>
           </div>
 
-          <div className="p-6 3xl:p-8 4k:p-10">
+          <div className="p-2 md:p-4 lg:p-5 2xl:p-6 3xl:p-8 4k:p-10">
             {/* Financial data coming together */}
             <motion.div
-              className="grid grid-cols-2 gap-4 3xl:gap-6 4k:gap-8 mb-6 3xl:mb-8 4k:mb-10"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:gap-4 lg:gap-5 2xl:gap-6 3xl:gap-8 4k:gap-10 mb-3 sm:mb-4 md:mb-4 lg:mb-5 2xl:mb-6 3xl:mb-8 4k:mb-10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <motion.div
-                className="bg-gray-800/50 rounded-lg p-4 3xl:p-5 4k:p-6 border border-capia-blue/20 3xl:border-2 4k:border-3"
+                className="bg-gray-800/50 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg p-3 sm:p-3 md:p-4 lg:p-4.5 2xl:p-5 3xl:p-6 4k:p-8 border border-capia-blue/20 3xl:border-2 4k:border-3"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
-                <div className="flex items-center mb-3 3xl:mb-4 4k:mb-5">
-                  <FileSpreadsheet className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-2 3xl:mr-3 4k:mr-4" />
-                  <span className="text-base 3xl:text-lg 4k:text-xl text-gray-300">
+                <div className="flex items-center mb-1.5 md:mb-2 lg:mb-2.5 2xl:mb-3 3xl:mb-4 4k:mb-5">
+                  <FileSpreadsheet className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 lg:h-5 lg:w-5 2xl:h-5 2xl:w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-1 sm:mr-1.5 md:mr-2 lg:mr-2 2xl:mr-2 3xl:mr-3 4k:mr-4" />
+                  <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base 3xl:text-lg 4k:text-xl text-gray-300">
                     Financial Data
                   </span>
                 </div>
-                <div className="h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-2 3xl:mb-3 4k:mb-4"></div>
-                <div className="h-3 3xl:h-4 4k:h-5 w-2/3 bg-capia-blue/20 rounded-full"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-1 sm:mb-1.5 md:mb-1.5 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 w-2/3 bg-capia-blue/20 rounded-full"></div>
               </motion.div>
 
               <motion.div
-                className="bg-gray-800/50 rounded-lg p-4 3xl:p-5 4k:p-6 border border-capia-blue/20 3xl:border-2 4k:border-3"
+                className="bg-gray-800/50 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg p-3 sm:p-3 md:p-4 lg:p-4.5 2xl:p-5 3xl:p-6 4k:p-8 border border-capia-blue/20 3xl:border-2 4k:border-3"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2, delay: 0.1 }}
               >
-                <div className="flex items-center mb-3 3xl:mb-4 4k:mb-5">
-                  <PieChart className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-2 3xl:mr-3 4k:mr-4" />
-                  <span className="text-base 3xl:text-lg 4k:text-xl text-gray-300">
+                <div className="flex items-center mb-1.5 md:mb-2 lg:mb-2.5 2xl:mb-3 3xl:mb-4 4k:mb-5">
+                  <PieChart className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 lg:h-5 lg:w-5 2xl:h-5 2xl:w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-1 sm:mr-1.5 md:mr-2 lg:mr-2 2xl:mr-2 3xl:mr-3 4k:mr-4" />
+                  <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base 3xl:text-lg 4k:text-xl text-gray-300">
                     CRM Integration
                   </span>
                 </div>
-                <div className="h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-2 3xl:mb-3 4k:mb-4"></div>
-                <div className="h-3 3xl:h-4 4k:h-5 w-3/4 bg-capia-blue/20 rounded-full"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-1 sm:mb-1.5 md:mb-1.5 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 w-3/4 bg-capia-blue/20 rounded-full"></div>
               </motion.div>
 
               <motion.div
-                className="bg-gray-800/50 rounded-lg p-4 3xl:p-5 4k:p-6 border border-capia-blue/20 3xl:border-2 4k:border-3"
+                className="bg-gray-800/50 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg p-3 sm:p-3 md:p-4 lg:p-4.5 2xl:p-5 3xl:p-6 4k:p-8 border border-capia-blue/20 3xl:border-2 4k:border-3"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2, delay: 0.2 }}
               >
-                <div className="flex items-center mb-3 3xl:mb-4 4k:mb-5">
-                  <DollarSign className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-2 3xl:mr-3 4k:mr-4" />
-                  <span className="text-base 3xl:text-lg 4k:text-xl text-gray-300">
+                <div className="flex items-center mb-1.5 md:mb-2 lg:mb-2.5 2xl:mb-3 3xl:mb-4 4k:mb-5">
+                  <DollarSign className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 lg:h-5 lg:w-5 2xl:h-5 2xl:w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-1 sm:mr-1.5 md:mr-2 lg:mr-2 2xl:mr-2 3xl:mr-3 4k:mr-4" />
+                  <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base 3xl:text-lg 4k:text-xl text-gray-300">
                     Treasury & Banking
                   </span>
                 </div>
-                <div className="h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-2 3xl:mb-3 4k:mb-4"></div>
-                <div className="h-3 3xl:h-4 4k:h-5 w-1/2 bg-capia-blue/20 rounded-full"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-1 sm:mb-1.5 md:mb-1.5 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 w-1/2 bg-capia-blue/20 rounded-full"></div>
               </motion.div>
 
               <motion.div
-                className="bg-gray-800/50 rounded-lg p-4 3xl:p-5 4k:p-6 border border-capia-blue/20 3xl:border-2 4k:border-3"
+                className="bg-gray-800/50 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg p-3 sm:p-3 md:p-4 lg:p-4.5 2xl:p-5 3xl:p-6 4k:p-8 border border-capia-blue/20 3xl:border-2 4k:border-3"
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2, delay: 0.3 }}
               >
-                <div className="flex items-center mb-3 3xl:mb-4 4k:mb-5">
-                  <TrendingUp className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-2 3xl:mr-3 4k:mr-4" />
-                  <span className="text-base 3xl:text-lg 4k:text-xl text-gray-300">
+                <div className="flex items-center mb-1.5 md:mb-2 lg:mb-2.5 2xl:mb-3 3xl:mb-4 4k:mb-5">
+                  <TrendingUp className="h-4 w-4 sm:h-4.5 sm:w-4.5 md:h-5 md:w-5 lg:h-5 lg:w-5 2xl:h-5 2xl:w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7 text-capia-blue mr-1 sm:mr-1.5 md:mr-2 lg:mr-2 2xl:mr-2 3xl:mr-3 4k:mr-4" />
+                  <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-base 3xl:text-lg 4k:text-xl text-gray-300">
                     Accounting
                   </span>
                 </div>
-                <div className="h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-2 3xl:mb-3 4k:mb-4"></div>
-                <div className="h-3 3xl:h-4 4k:h-5 w-3/5 bg-capia-blue/20 rounded-full"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 bg-capia-blue/30 rounded-full mb-1 sm:mb-1.5 md:mb-1.5 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+                <div className="h-2 sm:h-2 md:h-2.5 lg:h-2.5 2xl:h-3 3xl:h-4 4k:h-5 w-3/5 bg-capia-blue/20 rounded-full"></div>
               </motion.div>
             </motion.div>
 
             <motion.div
-              className="mt-6 3xl:mt-8 4k:mt-10 bg-capia-blue/5 rounded-lg p-5 3xl:p-6 4k:p-8 border border-capia-blue/30 3xl:border-2 4k:border-3"
+              className="mt-2 md:mt-4 lg:mt-5 2xl:mt-6 3xl:mt-8 4k:mt-10 bg-capia-blue/5 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg p-3 sm:p-3.5 md:p-4 lg:p-4.5 2xl:p-5 3xl:p-6 4k:p-8 border border-capia-blue/30 3xl:border-2 4k:border-3"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              <div className="flex items-center mb-4 3xl:mb-5 4k:mb-6">
-                <Lightbulb className="h-6 w-6 3xl:h-7 3xl:w-7 4k:h-8 4k:w-8 text-capia-blue mr-3 3xl:mr-4 4k:mr-5" />
-                <span className="text-lg 3xl:text-xl 4k:text-2xl text-capia-blue font-medium">
+              <div className="flex items-center mb-2 sm:mb-2 md:mb-3 lg:mb-3.5 2xl:mb-4 3xl:mb-5 4k:mb-6">
+                <Lightbulb className="h-4 w-4 md:h-5 md:w-5 lg:h-6 lg:w-6 2xl:h-6 2xl:w-6 3xl:h-7 3xl:w-7 4k:h-8 4k:w-8 text-capia-blue mr-1.5 sm:mr-2 md:mr-2 lg:mr-2.5 2xl:mr-3 3xl:mr-4 4k:mr-5" />
+                <span className="text-xs  md:text-base lg:text-lg 2xl:text-lg 3xl:text-xl 4k:text-2xl text-capia-blue font-medium">
                   Unified Financial Platform
                 </span>
               </div>
-              <div className="flex justify-between text-sm 3xl:text-base 4k:text-lg text-gray-400 mb-2 3xl:mb-3 4k:mb-4">
+              <div className="flex justify-between text-xs sm:text-xs md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg text-gray-400 mb-1 sm:mb-1.5 md:mb-1.5 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4">
                 <span>Real-time Insights</span>
                 <span>Automation</span>
                 <span>Analysis</span>
               </div>
-              <div className="h-4 3xl:h-5 4k:h-6 bg-gray-800 rounded-full">
+              <div className="h-2 sm:h-2.5 md:h-3 lg:h-3.5 2xl:h-4 3xl:h-5 4k:h-6 bg-gray-800 rounded-full">
                 <motion.div
                   className="h-full bg-gradient-to-r from-capia-blue to-capia-blue/70 rounded-full"
                   initial={{ width: "0%" }}
