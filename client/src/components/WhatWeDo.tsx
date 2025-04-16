@@ -332,7 +332,7 @@ function StruggleVisual() {
         <div className="relative w-full h-full">
           {/* Scattered documents */}
           <motion.div
-            className="absolute bg-gray-800 w-44 h-32 3xl:w-52 3xl:h-40 4k:w-64 4k:h-48 rounded shadow-lg border border-gray-700 3xl:border-2 4k:border-3 3xl:shadow-xl 4k:shadow-2xl"
+            className="absolute bg-gray-800 w-32 sm:w-36 md:w-40 lg:w-44 2xl:w-44 3xl:w-52 4k:w-64 h-24 sm:h-28 md:h-30 lg:h-32 2xl:h-32 3xl:h-40 4k:h-48 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl shadow-md sm:shadow-lg lg:shadow-xl 2xl:shadow-xl 3xl:shadow-2xl 4k:shadow-3xl border border-gray-700 3xl:border-2 4k:border-3"
             initial={{ x: 0, y: 0, rotate: -5 }}
             style={{ top: "15%", left: "20%" }}
             animate={{
@@ -345,16 +345,16 @@ function StruggleVisual() {
               ease: "easeInOut",
             }}
           >
-            <div className="h-4 3xl:h-5 4k:h-6 bg-capia-blue/30 rounded-t"></div>
-            <div className="p-2 3xl:p-3 4k:p-4">
-              <div className="w-full h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded mb-2 3xl:mb-3 4k:mb-4"></div>
-              <div className="w-3/4 h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded mb-2 3xl:mb-3 4k:mb-4"></div>
-              <div className="w-1/2 h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded"></div>
+            <div className="h-3 sm:h-3.5 md:h-3.5 lg:h-4 2xl:h-4 3xl:h-5 4k:h-6 bg-capia-blue/30 rounded-t sm:rounded-t-md lg:rounded-t-lg 2xl:rounded-t-lg 3xl:rounded-t-xl 4k:rounded-t-2xl"></div>
+            <div className="p-1.5 sm:p-2 md:p-2 lg:p-2 2xl:p-2 3xl:p-3 4k:p-4">
+              <div className="w-full h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl mb-1.5 sm:mb-2 md:mb-2 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+              <div className="w-3/4 h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl mb-1.5 sm:mb-2 md:mb-2 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+              <div className="w-1/2 h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl"></div>
             </div>
           </motion.div>
 
           <motion.div
-            className="absolute bg-gray-800 w-40 h-28 3xl:w-48 3xl:h-36 4k:w-56 4k:h-44 rounded shadow-lg border border-gray-700 3xl:border-2 4k:border-3 3xl:shadow-xl 4k:shadow-2xl"
+            className="absolute bg-gray-800 w-28 sm:w-32 md:w-36 lg:w-40 2xl:w-40 3xl:w-48 4k:w-56 h-20 sm:h-24 md:h-26 lg:h-28 2xl:h-28 3xl:h-36 4k:h-44 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl shadow-md sm:shadow-lg lg:shadow-xl 2xl:shadow-xl 3xl:shadow-2xl 4k:shadow-3xl border border-gray-700 3xl:border-2 4k:border-3"
             initial={{ x: 0, y: 0, rotate: 8 }}
             style={{ top: "30%", right: "15%" }}
             animate={{
@@ -368,16 +368,16 @@ function StruggleVisual() {
               delay: 0.5,
             }}
           >
-            <div className="h-4 3xl:h-5 4k:h-6 bg-capia-red/30 rounded-t"></div>
-            <div className="p-2 3xl:p-3 4k:p-4">
-              <div className="w-full h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded mb-2 3xl:mb-3 4k:mb-4"></div>
-              <div className="w-2/3 h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded mb-2 3xl:mb-3 4k:mb-4"></div>
-              <div className="w-full h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded"></div>
+            <div className="h-3 sm:h-3.5 md:h-3.5 lg:h-4 2xl:h-4 3xl:h-5 4k:h-6 bg-capia-red/30 rounded-t sm:rounded-t-md lg:rounded-t-lg 2xl:rounded-t-lg 3xl:rounded-t-xl 4k:rounded-t-2xl"></div>
+            <div className="p-1.5 sm:p-2 md:p-2 lg:p-2 2xl:p-2 3xl:p-3 4k:p-4">
+              <div className="w-full h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl mb-1.5 sm:mb-2 md:mb-2 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+              <div className="w-2/3 h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl mb-1.5 sm:mb-2 md:mb-2 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+              <div className="w-full h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl"></div>
             </div>
           </motion.div>
 
           <motion.div
-            className="absolute bg-gray-800 w-36 h-24 3xl:w-44 3xl:h-32 4k:w-52 4k:h-40 rounded shadow-lg border border-gray-700 3xl:border-2 4k:border-3 3xl:shadow-xl 4k:shadow-2xl"
+            className="absolute bg-gray-800 w-24 sm:w-28 md:w-32 lg:w-36 2xl:w-36 3xl:w-44 4k:w-52 h-16 sm:h-20 md:h-22 lg:h-24 2xl:h-24 3xl:h-32 4k:h-40 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl shadow-md sm:shadow-lg lg:shadow-xl 2xl:shadow-xl 3xl:shadow-2xl 4k:shadow-3xl border border-gray-700 3xl:border-2 4k:border-3"
             initial={{ x: 0, y: 0, rotate: -10 }}
             style={{ bottom: "25%", left: "10%" }}
             animate={{
@@ -391,18 +391,18 @@ function StruggleVisual() {
               delay: 1,
             }}
           >
-            <div className="h-4 3xl:h-5 4k:h-6 bg-capia-orange/30 rounded-t"></div>
-            <div className="p-2 3xl:p-3 4k:p-4">
-              <div className="w-full h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded mb-2 3xl:mb-3 4k:mb-4"></div>
-              <div className="w-1/2 h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded"></div>
+            <div className="h-3 sm:h-3.5 md:h-3.5 lg:h-4 2xl:h-4 3xl:h-5 4k:h-6 bg-capia-orange/30 rounded-t sm:rounded-t-md lg:rounded-t-lg 2xl:rounded-t-lg 3xl:rounded-t-xl 4k:rounded-t-2xl"></div>
+            <div className="p-1.5 sm:p-2 md:p-2 lg:p-2 2xl:p-2 3xl:p-3 4k:p-4">
+              <div className="w-full h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl mb-1.5 sm:mb-2 md:mb-2 lg:mb-2 2xl:mb-2 3xl:mb-3 4k:mb-4"></div>
+              <div className="w-1/2 h-2 sm:h-2.5 md:h-2.5 lg:h-3 2xl:h-3 3xl:h-4 4k:h-5 bg-gray-700 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl"></div>
             </div>
           </motion.div>
 
           {/* Finance team representative */}
-          <div className="absolute bottom-12 3xl:bottom-16 4k:bottom-20 right-16 3xl:right-20 4k:right-24 w-48 3xl:w-56 4k:w-64 h-48 3xl:h-56 4k:h-64 flex items-end">
+          <div className="absolute bottom-8 sm:bottom-10 md:bottom-10 lg:bottom-12 2xl:bottom-12 3xl:bottom-16 4k:bottom-20 right-12 sm:right-14 md:right-14 lg:right-16 2xl:right-16 3xl:right-20 4k:right-24 w-36 sm:w-40 md:w-44 lg:w-48 2xl:w-48 3xl:w-56 4k:w-64 h-36 sm:h-40 md:h-44 lg:h-48 2xl:h-48 3xl:h-56 4k:h-64 flex items-end">
             <div className="relative w-full">
               <motion.div
-                className="w-20 h-20 3xl:w-24 3xl:h-24 4k:w-28 4k:h-28 rounded-full bg-gray-700 mx-auto mb-3 3xl:mb-4 4k:mb-5 flex items-center justify-center"
+                className="w-16 sm:w-18 md:w-18 lg:w-20 2xl:w-20 3xl:w-24 4k:w-28 h-16 sm:h-18 md:h-18 lg:h-20 2xl:h-20 3xl:h-24 4k:h-28 rounded-full bg-gray-700 mx-auto mb-2 sm:mb-2.5 md:mb-2.5 lg:mb-3 2xl:mb-3 3xl:mb-4 4k:mb-5 flex items-center justify-center"
                 animate={{ y: [0, -5, 0] }}
                 transition={{
                   repeat: Infinity,
@@ -410,10 +410,12 @@ function StruggleVisual() {
                   ease: "easeInOut",
                 }}
               >
-                <span className="text-3xl 3xl:text-4xl 4k:text-5xl">🤯</span>
+                <span className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl 2xl:text-3xl 3xl:text-4xl 4k:text-5xl">
+                  🤯
+                </span>
               </motion.div>
-              <div className="bg-gray-800 rounded-lg p-3 3xl:p-4 4k:p-5 text-center border border-gray-700 3xl:border-2 4k:border-3">
-                <span className="text-sm 3xl:text-base 4k:text-lg text-gray-300">
+              <div className="bg-gray-800 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl p-2 sm:p-2.5 md:p-2.5 lg:p-3 2xl:p-3 3xl:p-4 4k:p-5 text-center border border-gray-700 3xl:border-2 4k:border-3">
+                <span className="text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg text-gray-300">
                   Finance team trying to piece it all together
                 </span>
               </div>
