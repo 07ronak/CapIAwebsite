@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface ChapterProps {
   number: number;
@@ -87,9 +87,22 @@ export default function WhatWeDo() {
     }
   }, [readWords, activeChapterWords.length, activeChapter, chapters.length]);
 
+  // Navigation functions
+  const goToPreviousChapter = () => {
+    if (activeChapter > 1) {
+      setActiveChapter(activeChapter - 1);
+    }
+  };
+
+  const goToNextChapter = () => {
+    if (activeChapter < chapters.length) {
+      setActiveChapter(activeChapter + 1);
+    }
+  };
+
   return (
     <section
-      className="min-h-screen flex items-center bg-gradient-to-b bg-black to-[#00b3e6] py-12 md:py-0"
+      className="min-h-screen flex items-center bg-gradient-to-b bg-black to-[#00b3e6] pb-12 md:py-0 mt-12"
       id="what-we-do"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full 3xl:max-w-8xl 4k:max-w-10xl 3xl:px-10 4k:px-12">
@@ -150,6 +163,35 @@ export default function WhatWeDo() {
               </motion.div>
             </AnimatePresence>
           </div>
+        </div>
+        {/* Navigation Arrows */}
+        {/* Navigation Arrows */}
+        <div className="flex justify-center mt-8 md:mt-12 space-x-4">
+          <button
+            onClick={goToPreviousChapter}
+            disabled={activeChapter === 1}
+            className={`p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 ${
+              activeChapter === 1
+                ? "opacity-50 cursor-not-allowed"
+                : "opacity-100"
+            }`}
+            aria-label="Previous chapter"
+          >
+            <ChevronLeft size={16} className="text-white" />
+          </button>
+
+          <button
+            onClick={goToNextChapter}
+            disabled={activeChapter === chapters.length}
+            className={`p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 ${
+              activeChapter === chapters.length
+                ? "opacity-50 cursor-not-allowed"
+                : "opacity-100"
+            }`}
+            aria-label="Next chapter"
+          >
+            <ChevronRight size={16} className="text-white" />
+          </button>
         </div>
       </div>
     </section>
