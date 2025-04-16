@@ -235,7 +235,7 @@ function ChaoticVisual() {
   return (
     <div className="relative h-full w-full bg-gradient-to-br from-gray-900 to-black overflow-hidden">
       <motion.div
-        className="absolute w-36 h-36 3xl:w-44 3xl:h-44 4k:w-52 4k:h-52 rounded bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-3 3xl:p-4 4k:p-5"
+        className="absolute w-24 sm:w-28 md:w-32 lg:w-36 2xl:w-36 3xl:w-44 4k:w-52 h-24 sm:h-28 md:h-32 lg:h-36 2xl:h-36 3xl:h-44 4k:h-52 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-2 sm:p-2.5 md:p-2.5 lg:p-3 2xl:p-3 3xl:p-4 4k:p-5"
         style={{ top: "10%", left: "5%" }}
         animate={{
           rotate: [0, 3, -3, 0],
@@ -247,14 +247,14 @@ function ChaoticVisual() {
           ease: "easeInOut",
         }}
       >
-        <FileSpreadsheet className="w-16 h-16 3xl:w-20 3xl:h-20 4k:w-24 4k:h-24 text-gray-500" />
-        <span className="block text-sm 3xl:text-base 4k:text-lg mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
+        <FileSpreadsheet className="w-12 sm:w-14 md:w-14 lg:w-16 2xl:w-16 3xl:w-20 4k:w-24 h-12 sm:h-14 md:h-14 lg:h-16 2xl:h-16 3xl:h-20 4k:h-24 text-gray-500" />
+        <span className="block text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg mt-1 sm:mt-1.5 md:mt-1.5 lg:mt-2 2xl:mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
           Spreadsheets
         </span>
       </motion.div>
 
       <motion.div
-        className="absolute w-32 h-32 3xl:w-40 3xl:h-40 4k:w-48 4k:h-48 rounded bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-3 3xl:p-4 4k:p-5"
+        className="absolute w-20 sm:w-24 md:w-28 lg:w-32 2xl:w-32 3xl:w-40 4k:w-48 h-20 sm:h-24 md:h-28 lg:h-32 2xl:h-32 3xl:h-40 4k:h-48 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-2 sm:p-2.5 md:p-2.5 lg:p-3 2xl:p-3 3xl:p-4 4k:p-5"
         style={{ top: "30%", right: "15%" }}
         animate={{
           rotate: [0, -5, 5, 0],
@@ -267,14 +267,14 @@ function ChaoticVisual() {
           delay: 0.5,
         }}
       >
-        <PieChart className="w-14 h-14 3xl:w-18 3xl:h-18 4k:w-22 4k:h-22 text-gray-500" />
-        <span className="block text-sm 3xl:text-base 4k:text-lg mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
+        <PieChart className="w-10 sm:w-12 md:w-12 lg:w-14 2xl:w-14 3xl:w-18 4k:w-22 h-10 sm:h-12 md:h-12 lg:h-14 2xl:h-14 3xl:h-18 4k:h-22 text-gray-500" />
+        <span className="block text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg mt-1 sm:mt-1.5 md:mt-1.5 lg:mt-2 2xl:mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
           CRM Data
         </span>
       </motion.div>
 
       <motion.div
-        className="absolute w-28 h-28 3xl:w-36 3xl:h-36 4k:w-44 4k:h-44 rounded bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-3 3xl:p-4 4k:p-5"
+        className="absolute w-16 sm:w-20 md:w-24 lg:w-28 2xl:w-28 3xl:w-36 4k:w-44 h-16 sm:h-20 md:h-24 lg:h-28 2xl:h-28 3xl:h-36 4k:h-44 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-2 sm:p-2.5 md:p-2.5 lg:p-3 2xl:p-3 3xl:p-4 4k:p-5"
         style={{ bottom: "20%", left: "20%" }}
         animate={{
           rotate: [0, 4, -4, 0],
@@ -287,14 +287,14 @@ function ChaoticVisual() {
           delay: 1,
         }}
       >
-        <DollarSign className="w-12 h-12 3xl:w-16 3xl:h-16 4k:w-20 4k:h-20 text-gray-500" />
-        <span className="block text-sm 3xl:text-base 4k:text-lg mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
+        <DollarSign className="w-8 sm:w-10 md:w-10 lg:w-12 2xl:w-12 3xl:w-16 4k:w-20 h-8 sm:h-10 md:h-10 lg:h-12 2xl:h-12 3xl:h-16 4k:h-20 text-gray-500" />
+        <span className="block text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg mt-1 sm:mt-1.5 md:mt-1.5 lg:mt-2 2xl:mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
           Treasury
         </span>
       </motion.div>
 
       <motion.div
-        className="absolute w-40 h-40 3xl:w-48 3xl:h-48 4k:w-56 4k:h-56 rounded bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-3 3xl:p-4 4k:p-5"
+        className="absolute w-28 sm:w-32 md:w-36 lg:w-40 2xl:w-40 3xl:w-48 4k:w-56 h-28 sm:h-32 md:h-36 lg:h-40 2xl:h-40 3xl:h-48 4k:h-56 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl bg-capia-darkGray border border-gray-700 3xl:border-2 4k:border-3 flex items-center justify-center p-2 sm:p-2.5 md:p-2.5 lg:p-3 2xl:p-3 3xl:p-4 4k:p-5"
         style={{ bottom: "10%", right: "10%" }}
         animate={{
           rotate: [0, -3, 3, 0],
@@ -307,15 +307,15 @@ function ChaoticVisual() {
           delay: 1.5,
         }}
       >
-        <TrendingUp className="w-16 h-16 3xl:w-20 3xl:h-20 4k:w-24 4k:h-24 text-gray-500" />
-        <span className="block text-sm 3xl:text-base 4k:text-lg mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
+        <TrendingUp className="w-12 sm:w-14 md:w-14 lg:w-16 2xl:w-16 3xl:w-20 4k:w-24 h-12 sm:h-14 md:h-14 lg:h-16 2xl:h-16 3xl:h-20 4k:h-24 text-gray-500" />
+        <span className="block text-xs sm:text-sm md:text-xs lg:text-sm 2xl:text-sm 3xl:text-base 4k:text-lg mt-1 sm:mt-1.5 md:mt-1.5 lg:mt-2 2xl:mt-2 3xl:mt-3 4k:mt-4 text-gray-400">
           Accounting
         </span>
       </motion.div>
 
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center px-6 py-4 3xl:px-8 3xl:py-5 4k:px-10 4k:py-6 rounded-lg bg-black/70 backdrop-blur-sm">
-          <span className="text-lg 3xl:text-xl 4k:text-2xl text-gray-400">
+        <div className="text-center px-4 sm:px-5 md:px-5 lg:px-6 2xl:px-6 3xl:px-8 4k:px-10 py-2 sm:py-3 md:py-3 lg:py-4 2xl:py-4 3xl:py-5 4k:py-6 rounded sm:rounded-md lg:rounded-lg 2xl:rounded-lg 3xl:rounded-xl 4k:rounded-2xl bg-black/70 backdrop-blur-sm">
+          <span className="text-base sm:text-lg md:text-base lg:text-lg 2xl:text-lg 3xl:text-xl 4k:text-2xl text-gray-400">
             Disconnected Financial Tools
           </span>
         </div>
