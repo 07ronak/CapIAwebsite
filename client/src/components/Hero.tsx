@@ -43,7 +43,7 @@ function App() {
               {...fadeIn(0.6)}
             >
               <motion.div {...popAnimation}>
-                <Link href="/alpha">
+                <Link href="/signup">
                   <Button className="w-full sm:w-auto px-10 py-5 bg-[#00b3e6] hover:bg-[#00b3e6]/90 text-white text-base font-medium 3xl:px-12 3xl:py-6 4k:px-16 4k:py-7 3xl:text-lg 4k:text-xl 3xl:rounded-lg 4k:rounded-xl">
                     Sign Up and Get Started
                   </Button>

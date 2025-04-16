@@ -145,7 +145,7 @@ export default function Pricing() {
               )}
 
               <div className="mt-auto">
-                <Link href="/alpha">
+                <Link href="/signup">
                   <motion.button
                     className={`w-full py-2 px-4 rounded-md flex items-center justify-center ${
                       plan.highlighted

@@ -273,7 +273,7 @@ export default function Revenue360() {
             making smarter, data-driven decisions for your business.
           </p>
           <Link
-            href="/alpha"
+            href="/signup"
             className="inline-block bg-[#00b3e6] text-white py-3 px-8 rounded-full text-lg font-medium hover:bg-[#00b3e6]/90 transition-colors"
           >
             Get Started

@@ -94,7 +94,7 @@ export default function Comparison() {
 
   return (
     <section
-      className="bg-black min-h-screen flex items-center justify-center"
+      className="bg-black min-h-screen flex items-center justify-center my-12 md:my-0"
       id="comparison"
     >
       <div className="max-w-5xl mx-auto px-4 3xl:max-w-8xl 4k:max-w-10xl 3xl:px-8 4k:px-12">

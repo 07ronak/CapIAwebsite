@@ -92,7 +92,7 @@ export default function WhatWeDo() {
 
   return (
     <section
-      className="min-h-screen flex items-center bg-gradient-to-b from-black to-capia-darkGray"
+      className="min-h-screen flex items-center bg-gradient-to-b bg-black to-[#00b3e6]"
       id="what-we-do"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full 3xl:max-w-8xl 4k:max-w-10xl 3xl:px-10 4k:px-12">

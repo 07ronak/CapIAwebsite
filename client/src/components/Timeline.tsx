@@ -49,7 +49,7 @@ export default function Timeline() {
 
   return (
     <section
-      className="bg-[#f4f1de] min-h-screen flex items-center"
+      className="bg-gradient-to-b min-h-screen flex items-center py-12 md:py-0 from-black to-[#00b3e6]"
       id="timeline"
       ref={timelineRef}
     >
@@ -59,7 +59,7 @@ export default function Timeline() {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-black mb-8 3xl:text-4xl 4k:text-5xl 3xl:mb-10 4k:mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text- mb-8 3xl:text-4xl 4k:text-5xl 3xl:mb-10 4k:mb-12">
             How Cap<span className="text-[#00b3e6]">IA</span>.ai Transforms Your
             Startup's Finances in{" "}
             <span className="text-[#f8851a]">Just 30 Days</span>

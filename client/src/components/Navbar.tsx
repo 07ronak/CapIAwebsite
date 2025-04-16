@@ -84,7 +84,7 @@ export default function Navbar() {
                 focus:ring-4 focus:ring-[#00b3e6]/30
                 active:transform active:scale-95
                 3xl:text-xl 4k:text-2xl 3xl:px-8 3xl:py-4 4k:px-10 4k:py-5 3xl:rounded-lg 4k:rounded-xl"
-              href="/alpha"
+              href="/login"
             >
               LogIn
             </Link>
@@ -144,9 +144,9 @@ export default function Navbar() {
                 border border-transparent hover:border-[#00b3e6]/30
                 focus:ring-4 focus:ring-[#00b3e6]/30
                 active:transform active:scale-95"
-              href="/alpha"
+              href="/login"
             >
-              Get Started
+              LogIn
             </Link>
           </div>
         </motion.div>
