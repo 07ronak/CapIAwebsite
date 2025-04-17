@@ -138,7 +138,7 @@ export default function WhatWeDo() {
           </div>
 
           {/* Image Section */}
-          <div className="md:w-1/2 flex items-center justify-center">
+          <div className="md:w-2/5 flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeChapter}
@@ -154,7 +154,7 @@ export default function WhatWeDo() {
                     chapters[activeChapter - 1].altText ||
                     chapters[activeChapter - 1].title
                   }
-                  className="object-cover w-full h-full "
+                  className="object-contain w-full h-full "
                 />
               </motion.div>
             </AnimatePresence>

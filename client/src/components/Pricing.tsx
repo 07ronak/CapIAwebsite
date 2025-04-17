@@ -44,7 +44,7 @@ export default function Pricing() {
       name: "CFO Assist",
       price: "Custom",
       description: "Enterprise-grade solution with personalized support",
-      billingInfo: ["Billed quarterly", "Starting at €2500"],
+      billingInfo: ["Billed quarterly", "Starting at €833/Month"],
       features: [
         { text: "Everything in Pro+" },
         { text: "On demand expertise" },
