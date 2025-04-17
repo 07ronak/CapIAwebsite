@@ -84,6 +84,10 @@ export default {
         },
       },
       keyframes: {
+        typing: {
+          "0%": { width: "0" },
+          "100%": { width: "100%" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -102,6 +106,7 @@ export default {
         },
       },
       animation: {
+        typing: "typing 4s",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

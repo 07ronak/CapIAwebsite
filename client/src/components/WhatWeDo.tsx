@@ -44,7 +44,7 @@ export default function WhatWeDo() {
     {
       number: 4,
       title: "The Transformation",
-      text: "With CapiA.ai, your finances become a story you can read, understand, and act on—empowering you to scale with confidence.",
+      text: "With CapIA.ai, your finances become a story you can read, understand, and act on—empowering you to scale with confidence.",
       imageUrl: "/new4.png",
       altText: "Visual representation of transformation",
     },
@@ -68,7 +68,7 @@ export default function WhatWeDo() {
         }
         return currentWords + 1;
       });
-    }, 150); // Slowed down to 250ms per word
+    }, 200); // Slowed down to 250ms per word
 
     return () => clearInterval(readingInterval);
   }, [activeChapter, activeChapterWords.length]);

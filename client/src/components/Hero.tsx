@@ -38,7 +38,11 @@ function App() {
               className="mt-2 text-base text-[#D3D3D3] mx-auto 3xl:text-xl md:text-2xl 4k:text-2xl 3xl:mt-4 4k:mt-6 3xl:max-w-3xl 4k:max-w-4xl"
               {...fadeIn(0.4)}
             >
-              "CFO Service as a Software" - For Startups
+              <div className="inline-block">
+                <span className="relative z-10 inline-block overflow-hidden whitespace-nowrap animate-typing">
+                  "CFO Service as a Software" - For Startups
+                </span>
+              </div>
             </motion.p>
             <motion.div
               className="mt-6 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 3xl:mt-8 4k:mt-10 3xl:space-x-6 4k:space-x-8"
