@@ -24,7 +24,7 @@ export default function WhatWeDo() {
       number: 1,
       title: "The Chaos",
       text: "Imagine managing finances like reading a scattered book in many languages—a confusing puzzle instead of a clear financial narrative.",
-      imageUrl: "/chaos.png",
+      imageUrl: "/i1.png",
       altText: "Visual representation of chaos",
     },
     {
