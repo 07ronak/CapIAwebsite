@@ -139,10 +139,10 @@ export default function Comparison() {
                     <AlertCircle className="text-[#F1425A] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-white text-base 3xl:text-lg 4k:text-xl">
+                    <h4 className="font-semibold text-white text-base 3xl:text-xl 4k:text-2xl">
                       {item.title}
                     </h4>
-                    <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-xl">
+                    <p className="text-[#D3D3D3] text-sm 3xl:text-xl 4k:text-2xl">
                       {item.description}
                     </p>
                   </div>
@@ -207,12 +207,12 @@ export default function Comparison() {
                               : { scale: 1, color: "#ffffff" }
                           }
                           transition={{ duration: 1, ease: "easeInOut" }}
-                          className="font-semibold text-base mr-2 3xl:text-lg 4k:text-xl 3xl:mr-3 4k:mr-4"
+                          className="font-semibold text-base mr-2 3xl:text-xl 4k:text-2xl 3xl:mr-3 4k:mr-4"
                         >
                           {item.title}
                         </motion.h4>
                       </div>
-                      <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-xl">
+                      <p className="text-[#D3D3D3] text-sm 3xl:text-xl 4k:text-2xl">
                         {item.description}
                       </p>
                     </div>
