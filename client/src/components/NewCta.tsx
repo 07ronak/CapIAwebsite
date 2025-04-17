@@ -53,10 +53,10 @@ export default function NewCta() {
                 </motion.div>
                 <motion.div {...popAnimation}>
                   <Button
-                    className="w-full px-8 py-7 bg-[#F1425A] hover:bg-[#F1425A]/90 text-white text-lg 3xl:text-xl 4k:text-2xl 3xl:py-8 4k:py-10"
+                    className="w-full px-8 py-7 bg-[#FF955C] hover:bg-[#FF955C]/90 text-white text-lg 3xl:text-xl 4k:text-2xl 3xl:py-8 4k:py-10"
                     onClick={openDialog}
                   >
-                    Talk to us about your needs
+                    Talk to us about Your Needs
                   </Button>
                 </motion.div>
               </div>

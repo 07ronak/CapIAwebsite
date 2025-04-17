@@ -35,12 +35,10 @@ function App() {
               Unify, Predict, Grow.
             </motion.span>
             <motion.p
-              className="mt-2 text-base text-[#D3D3D3] mx-auto 3xl:text-xl 4k:text-2xl 3xl:mt-4 4k:mt-6 3xl:max-w-3xl 4k:max-w-4xl"
+              className="mt-2 text-base text-[#D3D3D3] mx-auto 3xl:text-xl md:text-2xl 4k:text-2xl 3xl:mt-4 4k:mt-6 3xl:max-w-3xl 4k:max-w-4xl"
               {...fadeIn(0.4)}
             >
-              CapIA.ai unifies your financial data, delivers AI-powered
-              insights, and gives you the clarity to scale your startup with
-              confidence.
+              "CFO Service as a Software" - For Startups
             </motion.p>
             <motion.div
               className="mt-6 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 3xl:mt-8 4k:mt-10 3xl:space-x-6 4k:space-x-8"
@@ -58,7 +56,7 @@ function App() {
                   className="w-full sm:w-auto px-6 py-5 bg-[#FF955C] hover:bg-[#FF955C]/90 text-white text-base font-medium 3xl:px-8 3xl:py-6 4k:px-12 4k:py-7 3xl:text-lg 4k:text-xl 3xl:rounded-lg 4k:rounded-xl"
                   onClick={openDialog}
                 >
-                  Talk to us about your needs
+                  Talk to us about Your Needs
                 </Button>
               </motion.div>
             </motion.div>

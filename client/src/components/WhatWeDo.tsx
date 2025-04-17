@@ -31,21 +31,21 @@ export default function WhatWeDo() {
       number: 2,
       title: "The Struggle",
       text: "Accounting software, cash flow spreadsheets, CRM data, and treasury tools all operate in isolation. These disconnections give the CFO migraines, leaving founders and finance teams piecing together their own financial information, struggling to make confident decisions.",
-      imageUrl: "/struggle.png",
+      imageUrl: "/new2.png",
       altText: "Visual representation of struggle",
     },
     {
       number: 3,
       title: "The Solution",
-      text: "CapiA.ai changes everything. We bring your financial systems into one platform, providing real-time insights, proactive analysis, and automation to help you scale smarter and more profitably.",
-      imageUrl: "/solution.png",
+      text: "CapIA.ai changes everything. We bring your financial systems into one platform, providing real-time insights, proactive analysis, and automation to help you scale smarter and more profitably.",
+      imageUrl: "/new.png",
       altText: "Visual representation of solution",
     },
     {
       number: 4,
       title: "The Transformation",
       text: "With CapiA.ai, your finances become a story you can read, understand, and act on—empowering you to scale with confidence.",
-      imageUrl: "/transformation.jpeg",
+      imageUrl: "/new4.png",
       altText: "Visual representation of transformation",
     },
   ];
@@ -102,7 +102,7 @@ export default function WhatWeDo() {
 
   return (
     <section
-      className="min-h-screen flex items-center bg-gradient-to-b bg-black to-[#00b3e6] pb-12 md:py-0 mt-12"
+      className="min-h-screen flex items-center bg-gradient-to-b from-black to-gray-800 pb-12 md:py-0 mt-12"
       id="what-we-do"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full 3xl:max-w-8xl 4k:max-w-10xl 3xl:px-10 4k:px-12">
@@ -124,11 +124,11 @@ export default function WhatWeDo() {
                   ref={textRef}
                   className="prose prose-xl prose-invert max-w-none 3xl:prose-2xl 4k:prose-3xl"
                 >
-                  <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl leading-relaxed 3xl:text-6xl 4k:text-6xl 3xl:leading-relaxed 4k:leading-relaxed">
+                  <p className="text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4xl leading-relaxed 3xl:text-5xl 4k:text-5xl 3xl:leading-relaxed 4k:leading-relaxed font-mono">
                     {activeChapterWords.map((word, index) => (
                       <span
                         key={index}
-                        className={`transition-colors duration-500 ${
+                        className={`transition-colors duration-500 $
                           index < readWords ? "text-capia-blue" : "text-white"
                         }`}
                       >
@@ -150,7 +150,7 @@ export default function WhatWeDo() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.7 }}
-                className="w-full h-[450px] md:h-[550px] 3xl:h-[650px] 4k:h-[750px] rounded-xl 3xl:rounded-2xl 4k:rounded-3xl overflow-hidden border border-gray-800 3xl:border-2 4k:border-3"
+                className="w-full h-[450px] md:h-[550px] 3xl:h-[650px] 4k:h-[750px] rounded-xl 3xl:rounded-2xl 4k:rounded-3xl overflow-hidden"
               >
                 <img
                   src={chapters[activeChapter - 1].imageUrl}
@@ -158,7 +158,7 @@ export default function WhatWeDo() {
                     chapters[activeChapter - 1].altText ||
                     chapters[activeChapter - 1].title
                   }
-                  className="object-cover w-full h-full"
+                  className="object-cover w-full h-full "
                 />
               </motion.div>
             </AnimatePresence>
