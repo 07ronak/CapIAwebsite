@@ -81,7 +81,7 @@ export default function SignUp() {
             Be Part of the Future of Startup Finance
           </h2>
           <p className="text-[#D3D3D3] mt-4 max-w-xl mx-auto">
-            Join our alpha program to shape the future of Capia.ai. Get early
+            Join our program to shape the future of Capia.ai. Get early
             access to Revenue360 and provide feedback to help us grow.
           </p>
         </motion.div>
@@ -190,7 +190,7 @@ export default function SignUp() {
                 whileHover={{ scale: 1.03, backgroundColor: "#00c5ff" }}
                 whileTap={{ scale: 0.98 }}
               >
-                <span>Sign up for Alpha Access</span>
+                <span>Sign up for Access</span>
                 <ArrowRight className="ml-2 h-4 w-4" />
               </motion.button>
             </div>

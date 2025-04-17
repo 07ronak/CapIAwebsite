@@ -24,7 +24,7 @@ export default function Pricing() {
       description:
         "During starter phase. Free for the first 15 days and then move to PRO",
       billingInfo: ["To build and shape together the future with CapIA.ai"],
-      features: [{ text: "Everything in Pro, free for 15 days" },],
+      features: [{ text: "Everything in Pro (Free for 15 days)" },],
       ctaText: "Get Started",
     },
     {
