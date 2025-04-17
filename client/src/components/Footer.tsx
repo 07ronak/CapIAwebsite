@@ -107,15 +107,16 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 3xl:space-y-4 4k:space-y-6">
               <li>
-                <button
+                <a
+                  href="#what-we-do"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
                 >
                   What we do
-                </button>
+                </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#timeline"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
                 >
                   Why CapIA?
