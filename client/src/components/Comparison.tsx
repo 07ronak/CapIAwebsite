@@ -167,7 +167,7 @@ export default function Comparison() {
 
             <ul className="space-y-4 3xl:space-y-6 4k:space-y-12">
               {solutions.map((item, index) => {
-                const Icon = item.icon;
+                const Icon = item.icon || CheckCircle;
                 return (
                   <motion.li
                     key={index}
@@ -178,32 +178,39 @@ export default function Comparison() {
                     transition={{ duration: 0.4, delay: index * 0.1 + 0.3 }}
                   >
                     <div className="mr-3 mt-1 3xl:mr-4 4k:mr-5 3xl:mt-1.5 4k:mt-2">
-                      <CheckCircle className="text-[#00b3e6] h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
+                      <motion.div
+                        initial={{ scale: 1 }}
+                        animate={
+                          activeIconIndex === index
+                            ? {
+                                scale: [1, 1.3, 1],
+                                color: ["#00b3e6", "#ffff", "#00b3e6"],
+                              }
+                            : { scale: 1, color: "#00b3e6" }
+                        }
+                        transition={{ duration: 1, ease: "easeInOut" }}
+                        className="text-[#00b3e6]"
+                      >
+                        <Icon className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
+                      </motion.div>
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center">
-                        <h4 className="font-semibold text-white text-base mr-2 3xl:text-lg 4k:text-xl 3xl:mr-3 4k:mr-4">
+                        <motion.h4
+                          initial={{ scale: 1 }}
+                          animate={
+                            activeIconIndex === index
+                              ? {
+                                  scale: [1, 1.1, 1],
+                                  color: ["#ffffff", "#00b3e6", "#ffffff"],
+                                }
+                              : { scale: 1, color: "#ffffff" }
+                          }
+                          transition={{ duration: 1, ease: "easeInOut" }}
+                          className="font-semibold text-base mr-2 3xl:text-lg 4k:text-xl 3xl:mr-3 4k:mr-4"
+                        >
                           {item.title}
-                        </h4>
-                        <AnimatePresence>
-                          {Icon && (
-                            <motion.div
-                              initial={{ scale: 1 }}
-                              animate={
-                                activeIconIndex === index
-                                  ? {
-                                      scale: [1, 1.3, 1],
-                                      color: ["#00b3e6", "#ffff", "#00b3e6"],
-                                    }
-                                  : { scale: 1, color: "#00b3e6" }
-                              }
-                              transition={{ duration: 1, ease: "easeInOut" }}
-                              className="text-[#00b3e6]"
-                            >
-                              <Icon className="h-5 w-5 3xl:h-6 3xl:w-6 4k:h-7 4k:w-7" />
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
+                        </motion.h4>
                       </div>
                       <p className="text-[#D3D3D3] text-sm 3xl:text-base 4k:text-xl">
                         {item.description}

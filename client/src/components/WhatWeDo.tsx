@@ -68,7 +68,7 @@ export default function WhatWeDo() {
         }
         return currentWords + 1;
       });
-    }, 250); // Slowed down to 250ms per word
+    }, 150); // Slowed down to 250ms per word
 
     return () => clearInterval(readingInterval);
   }, [activeChapter, activeChapterWords.length]);
@@ -89,15 +89,11 @@ export default function WhatWeDo() {
 
   // Navigation functions
   const goToPreviousChapter = () => {
-    if (activeChapter > 1) {
-      setActiveChapter(activeChapter - 1);
-    }
+    setActiveChapter((prev) => (prev === 1 ? chapters.length : prev - 1));
   };
 
   const goToNextChapter = () => {
-    if (activeChapter < chapters.length) {
-      setActiveChapter(activeChapter + 1);
-    }
+    setActiveChapter((prev) => (prev === chapters.length ? 1 : prev + 1));
   };
 
   return (
@@ -128,7 +124,7 @@ export default function WhatWeDo() {
                     {activeChapterWords.map((word, index) => (
                       <span
                         key={index}
-                        className={`transition-colors duration-500 $
+                        className={`transition-colors duration-500 ${
                           index < readWords ? "text-capia-blue" : "text-white"
                         }`}
                       >
@@ -169,12 +165,7 @@ export default function WhatWeDo() {
         <div className="flex justify-center mt-8 md:mt-12 space-x-4">
           <button
             onClick={goToPreviousChapter}
-            disabled={activeChapter === 1}
-            className={`p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 ${
-              activeChapter === 1
-                ? "opacity-50 cursor-not-allowed"
-                : "opacity-100"
-            }`}
+            className="p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 opacity-100"
             aria-label="Previous chapter"
           >
             <ChevronLeft size={16} className="text-white" />
@@ -182,12 +173,7 @@ export default function WhatWeDo() {
 
           <button
             onClick={goToNextChapter}
-            disabled={activeChapter === chapters.length}
-            className={`p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 ${
-              activeChapter === chapters.length
-                ? "opacity-50 cursor-not-allowed"
-                : "opacity-100"
-            }`}
+            className="p-2 rounded-full bg-black/50 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:bg-capia-blue/70 opacity-100"
             aria-label="Next chapter"
           >
             <ChevronRight size={16} className="text-white" />
