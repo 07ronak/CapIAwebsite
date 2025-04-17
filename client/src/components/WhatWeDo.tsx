@@ -30,7 +30,7 @@ export default function WhatWeDo() {
     {
       number: 2,
       title: "The Struggle",
-      text: "Scattered tools mean fragmented finances, a partial story pieced together—making confident decisions early impossible for your growing team",
+      text: "Scattered tools mean fragmented finances, a partial story pieced together—making confident decisions early impossible for your growing team.",
       imageUrl: "/new2.png",
       altText: "Visual representation of struggle",
     },
