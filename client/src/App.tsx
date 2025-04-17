@@ -7,6 +7,8 @@ import R360 from "@/pages/R360";
 import AboutUs from "@/pages/AboutUs";
 import Alpha from "@/pages/Alpha";
 import Login from "@/pages/Login";
+/* import { ContactDialogProvider } from "./components/ContactDialogContext";
+import ContactDialog from "./components/ContactDialog"; */
 
 function Router() {
   return (
@@ -25,8 +27,11 @@ function Router() {
 function App() {
   return (
     <>
-      <Router />
-      <Toaster />
+     {/*  <ContactDialogProvider> */}
+        <Router />
+        <Toaster />
+       {/*  <ContactDialog /> */}
+     {/*  </ContactDialogProvider> */}
     </>
   );
 }

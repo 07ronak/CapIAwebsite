@@ -4,18 +4,14 @@ import { Link } from "wouter";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Linkedin, Twitter, Facebook, MessageCircle } from "lucide-react";
+import { Linkedin } from "lucide-react";
+/* import { useContactDialog } from "./ContactDialogContext"; */
 
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubscribing, setIsSubscribing] = useState(false);
   const { toast } = useToast();
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const [contactForm, setContactForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+ /*  const { openDialog } = useContactDialog(); */
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,89 +56,6 @@ export default function Footer() {
       });
     } finally {
       setIsSubscribing(false);
-    }
-  };
-
-  const openContactDialog = () => {
-    if (dialogRef.current) {
-      dialogRef.current.showModal();
-    }
-  };
-
-  const closeContactDialog = () => {
-    if (dialogRef.current) {
-      dialogRef.current.close();
-    }
-  };
-
-  const handleContactFormChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setContactForm((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleContactSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Validate form
-    if (!contactForm.name || !contactForm.email || !contactForm.message) {
-      toast({
-        title: "Error",
-        description: "Please fill in all fields",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(contactForm.email)) {
-      toast({
-        title: "Error",
-        description: "Please enter a valid email address",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    try {
-      const response = await fetch("/api/submit-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          formType: "contact",
-          ...contactForm,
-          screenResolution: `${window.screen.width}x${window.screen.height}`,
-        }),
-      });
-
-      const data = await response.json();
-      if (!response.ok) {
-        throw new Error(data.message || "Failed to submit form");
-      }
-
-      toast({
-        title: "Thank you for your message!",
-        description: "We'll get back to you soon.",
-      });
-
-      // Reset form and close dialog
-      setContactForm({ name: "", email: "", message: "" });
-      closeContactDialog();
-    } catch (error) {
-      console.error("Form submission error:", error);
-      toast({
-        title: "Failed to send message",
-        description:
-          error instanceof Error ? error.message : "Something went wrong",
-        variant: "destructive",
-      });
     }
   };
 
@@ -200,10 +113,17 @@ export default function Footer() {
                   What we do
                 </button>
               </li>
-
+              <li>
+                <a
+                  href="#"
+                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
+                >
+                  Why CapIA?
+                </a>
+              </li>
               <li>
                 <button
-                  onClick={openContactDialog}
+                  /* onClick={openDialog} */
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
                 >
                   Contact Us
@@ -234,14 +154,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 3xl:space-y-4 4k:space-y-6">
               <li>
-                <a
-                  href="#"
-                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
-                >
-                  Why CapIA?
-                </a>
-              </li>
-              <li>
                 <Link
                   href="/360"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
@@ -249,12 +161,29 @@ export default function Footer() {
                   Revenue 360
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/pricing"
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
                 >
                   Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/login"
+                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
+                >
+                  Login
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/signup"
+                  className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
+                >
+                  Sign Up
                 </Link>
               </li>
             </ul>
@@ -325,91 +254,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-      {/* Contact Dialog */}
-      <dialog
-        ref={dialogRef}
-        className="rounded-lg shadow-lg backdrop:bg-black/50 backdrop:backdrop-blur-sm w-full bg-[#121212] text-white p-8 max-w-md md:max-w-lg 3xl:max-w-xl 4k:max-w-2xl 3xl:p-10 4k:p-12"
-        onClick={(e) => {
-          if (e.target === dialogRef.current) {
-            closeContactDialog();
-          }
-        }}
-      >
-        <div className="flex justify-between items-center mb-8 3xl:mb-10 4k:mb-12">
-          <h3 className="text-2xl font-semibold text-[#00b3e6] 3xl:text-3xl 4k:text-4k">
-            Contact Us
-          </h3>
-          <button
-            onClick={closeContactDialog}
-            className="text-gray-400 hover:text-white transition-colors text-xl 3xl:text-2xl 4k:text-3xl"
-          >
-            ✕
-          </button>
-        </div>
-
-        <form onSubmit={handleContactSubmit}>
-          <div className="mb-6 3xl:mb-8 4k:mb-10">
-            <label
-              htmlFor="name"
-              className="block text-sm font-medium text-gray-300 mb-2 3xl:text-base 4k:text-lg 3xl:mb-3 4k:mb-4"
-            >
-              Name
-            </label>
-            <Input
-              id="name"
-              name="name"
-              type="text"
-              value={contactForm.name}
-              onChange={handleContactFormChange}
-              className="w-full p-3 rounded-md bg-[#202B31] border border-gray-700 text-white focus:outline-none focus:border-[#00b3e6] 3xl:p-4 4k:p-5 3xl:text-lg 4k:text-xl"
-              placeholder="Your name"
-            />
-          </div>
-
-          <div className="mb-6 3xl:mb-8 4k:mb-10">
-            <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-300 mb-2 3xl:text-base 4k:text-lg 3xl:mb-3 4k:mb-4"
-            >
-              Email
-            </label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              value={contactForm.email}
-              onChange={handleContactFormChange}
-              className="w-full p-3 rounded-md bg-[#202B31] border border-gray-700 text-white focus:outline-none focus:border-[#00b3e6] 3xl:p-4 4k:p-5 3xl:text-lg 4k:text-xl"
-              placeholder="Your email"
-            />
-          </div>
-
-          <div className="mb-8 3xl:mb-10 4k:mb-12">
-            <label
-              htmlFor="message"
-              className="block text-sm font-medium text-gray-300 mb-2 3xl:text-base 4k:text-lg 3xl:mb-3 4k:mb-4"
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={contactForm.message}
-              onChange={handleContactFormChange}
-              className="w-full p-3 rounded-md bg-[#202B31] border border-gray-700 text-white focus:outline-none focus:border-[#00b3e6] min-h-[150px] 3xl:p-4 4k:p-5 3xl:text-lg 4k:text-xl 3xl:min-h-[200px] 4k:min-h-[250px]"
-              placeholder="Your message"
-            />
-          </div>
-
-          <Button
-            type="submit"
-            className="w-full bg-[#00b3e6] py-3 rounded-md text-white hover:bg-[#00b3e6]/90 transition-all text-base font-medium 3xl:py-4 4k:py-5 3xl:text-lg 4k:text-xl 3xl:rounded-lg 4k:rounded-xl"
-          >
-            Send Message
-          </Button>
-        </form>
-      </dialog>
     </footer>
   );
 }

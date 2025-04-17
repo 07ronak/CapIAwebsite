@@ -15,7 +15,7 @@ export default function NewCta() {
         </motion.h2>
         <div className="max-w-2xl text-center mx-auto 3xl:max-w-4xl 4k:max-w-6xl">
           <motion.div
-            className="bg-[#202B31] rounded-xl p-8 md:p-12 border border-gray-800 shadow-2xl 3xl:p-16 4k:p-20"
+            className="bg-[#00262E] rounded-xl p-8 md:p-12  shadow-2xl 3xl:p-16 4k:p-20"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

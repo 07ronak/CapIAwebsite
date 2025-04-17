@@ -24,7 +24,7 @@ export default function Pricing() {
       description:
         "During starter phase. Free for the first 15 days and then move to PRO",
       billingInfo: ["To build and shape together the future with CapIA.ai"],
-      features: [],
+      features: [{ text: "Everything in Pro, free for 15 days" },],
       ctaText: "Get Started",
     },
     {
@@ -149,7 +149,7 @@ export default function Pricing() {
                   <motion.button
                     className={`w-full py-2 px-4 rounded-md flex items-center justify-center ${
                       plan.highlighted
-                        ? "bg-[#00b3e6] text-black hover:bg-[#00b3e6]/90"
+                        ? "bg-[#00b3e6] text-white hover:bg-[#00b3e6]/90 group-hover:text-black"
                         : "bg-[#202B31] border border-gray-700 text-white hover:bg-[#00b3e6] hover:text-black hover:border-[#00b3e6] group-hover:bg-[#00b3e6] group-hover:text-black group-hover:border-[#00b3e6]"
                     } transition-colors duration-200`}
                     whileHover={{ scale: 1.02 }}
