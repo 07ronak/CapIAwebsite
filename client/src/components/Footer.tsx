@@ -5,13 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { Linkedin } from "lucide-react";
-/* import { useContactDialog } from "./ContactDialogContext"; */
+import { useContactDialog } from "./ContactDialogContext";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [isSubscribing, setIsSubscribing] = useState(false);
   const { toast } = useToast();
- /*  const { openDialog } = useContactDialog(); */
+  const { openDialog } = useContactDialog();
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -123,7 +123,7 @@ export default function Footer() {
               </li>
               <li>
                 <button
-                  /* onClick={openDialog} */
+                  onClick={openDialog}
                   className={`text-[#D3D3D3] hover:text-[#00b3e6] transition-colors ${underlineHoverAnimation} 3xl:text-lg 4k:text-xl`}
                 >
                   Contact Us

@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { fadeIn, popAnimation } from "@/lib/animations";
 import { Link } from "wouter";
+import { useContactDialog } from "./ContactDialogContext";
 
 export default function NewCta() {
+  const { openDialog } = useContactDialog();
   return (
     <section className="py-20 bg-gradient-to-b from-black to-[#00b3e6] 3xl:py-28 4k:py-36">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 3xl:max-w-8xl 4k:max-w-10xl text-center">
@@ -50,7 +52,10 @@ export default function NewCta() {
                   </Link>
                 </motion.div>
                 <motion.div {...popAnimation}>
-                  <Button className="w-full px-8 py-7 bg-[#F1425A] hover:bg-[#F1425A]/90 text-white text-lg 3xl:text-xl 4k:text-2xl 3xl:py-8 4k:py-10">
+                  <Button
+                    className="w-full px-8 py-7 bg-[#F1425A] hover:bg-[#F1425A]/90 text-white text-lg 3xl:text-xl 4k:text-2xl 3xl:py-8 4k:py-10"
+                    onClick={openDialog}
+                  >
                     Talk to us about your needs
                   </Button>
                 </motion.div>

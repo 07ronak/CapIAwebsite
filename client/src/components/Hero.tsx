@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useToast } from "@/hooks/use-toast";
 import {
   fadeIn,
   slideInLeft,
@@ -8,8 +9,11 @@ import {
 } from "@/lib/animations";
 import { Shield } from "lucide-react";
 import { Link } from "wouter";
+import { useContactDialog } from "./ContactDialogContext";
 
 function App() {
+  const { toast } = useToast();
+  const { openDialog } = useContactDialog();
   return (
     <section
       className="bg-gradient-to-b from-black via-[#005A73] to-[#00b3e6] flex items-center pt-24 pb-8 3xl:pt-32 3xl:pb-12 4k:pt-40 4k:pb-16"
@@ -50,7 +54,10 @@ function App() {
                 </Link>
               </motion.div>
               <motion.div {...popAnimation}>
-                <Button className="w-full sm:w-auto px-6 py-5 bg-[#FF955C] hover:bg-[#FF955C]/90 text-white text-base font-medium 3xl:px-8 3xl:py-6 4k:px-12 4k:py-7 3xl:text-lg 4k:text-xl 3xl:rounded-lg 4k:rounded-xl">
+                <Button
+                  className="w-full sm:w-auto px-6 py-5 bg-[#FF955C] hover:bg-[#FF955C]/90 text-white text-base font-medium 3xl:px-8 3xl:py-6 4k:px-12 4k:py-7 3xl:text-lg 4k:text-xl 3xl:rounded-lg 4k:rounded-xl"
+                  onClick={openDialog}
+                >
                   Talk to us about your needs
                 </Button>
               </motion.div>
